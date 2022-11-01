@@ -1,0 +1,57 @@
+.popups-plugin{
+    display:block;
+}
+.popups-plugin.center .popup-pane__footer{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.price-not-defined{
+    padding: 0 20px 0 0;
+    text-decoration: underline;
+}
+
+.catalog-grid-item-footer__bottom .price-not-defined{
+    padding: 0;
+}
+
+.error-field{
+    border-color: red;
+}
+
+.catalog-empty .pager-toolbar{
+    display:none;
+}
+.hidden{
+    display:none;
+}
+
+.badge-status.order-status-N,
+.badge-status.order-status-DG,
+.badge-status.order-status-DW,
+.badge-status.order-status-CO,
+.badge-status.badge-status_pink
+{
+    width:185px;
+    color:#1a1a1a;
+}
+.badge-status.order-status-DP{
+    width:188px;
+    color:#1a1a1a;
+    padding: 6px 0px;
+}
+.badge-status.order-status-DR,
+.badge-status.order-status-F
+{
+    width:188px;
+    color:#fff;
+}
+
+#frmCatalogFilters .field-input-radio.disabled {
+    display:none;
+}
+
+.phoenix-filter-empty .pager-toolbar{
+    display:none;
+}

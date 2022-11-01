@@ -1,0 +1,5 @@
+{
+  "printWidth": 120,
+  "html.format.wrapAttributes": "force-aligned",
+  "bracketSameLine": true
+}
