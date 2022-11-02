@@ -6,14 +6,18 @@ function formatState(state) {
   if (state.element) {
     return $(`
       <span>
-        <svg>
-          <use xlink:href="./img/sprite.svg#${state.element.getAttribute("data-country")}"></use>
-        </svg>
+        <img src="./img/${state.element.getAttribute("data-country")}.svg"/>
         ${state.text}
       </span>
     `);
   }
   return state.text;
+}
+
+{
+  /* <svg>
+  <use xlink:href="./img/sprite.svg#${state.element.getAttribute("data-country")}"></use>
+</svg> */
 }
 
 // const promise = new Promise(res => {
@@ -38,9 +42,7 @@ $(".wrap-field-input--select-phone select").each((idx, item) => {
     $item.next().addClass("select2-container--select-phone");
 
     $item.next().find(".select2-selection__rendered").html(`
-      <svg>
-        <use xlink:href="./img/sprite.svg#ru"></use>
-      </svg>
+      <img src="./img/ru.svg"/>
     `);
   });
 });
@@ -55,9 +57,7 @@ $(".wrap-field-input--select-phone  select").on("select2:select", function (e) {
   const $select = $parent.find(".select2-selection__rendered");
 
   $select.html(`
-    <svg>
-      <use xlink:href="./img/sprite.svg#${e.params.data.id}"></use>
-    </svg>
+    <img src="./img/${e.params.data.id}.svg"/>
   `);
 
   const sub = num.toString().replace("9", "\\9");
