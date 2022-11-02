@@ -1,0 +1,1672 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta id="viewport" name="viewport" content="width=device-width,initial-scale=1"><title>Мои заказы</title><!--	<meta name="description" content="">--><meta name="format-detection" content="telephone=no"><meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"><link rel="apple-touch-icon" sizes="57x57" href="/local/templates/general//favicon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/local/templates/general//favicon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/local/templates/general//favicon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/local/templates/general//favicon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/local/templates/general//favicon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/local/templates/general//favicon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/local/templates/general//favicon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/local/templates/general//favicon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/local/templates/general//favicon/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/local/templates/general//favicon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/local/templates/general//favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/local/templates/general//favicon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/local/templates/general//favicon/favicon-16x16.png"><link rel="manifest" href="/local/templates/general//favicon/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/local/templates/general//favicon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="index, follow"><link href="/bitrix/js/main/core/css/core.css?16050888553963" type="text/css" rel="stylesheet"><script type="text/javascript" data-skip-moving="true">(function (w, d, n) {
+        var cl = "bx-core";
+        var ht = d.documentElement;
+        var htc = ht ? ht.className : undefined;
+        if (htc === undefined || htc.indexOf(cl) !== -1) {
+          return;
+        }
+        var ua = n.userAgent;
+        if (/(iPad;)|(iPhone;)/i.test(ua)) {
+          cl += " bx-ios";
+        } else if (/Android/i.test(ua)) {
+          cl += " bx-android";
+        }
+        cl += /(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch";
+        cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina";
+        var ieVersion = -1;
+        if (/AppleWebKit/.test(ua)) {
+          cl += " bx-chrome";
+        } else if ((ieVersion = getIeVersion()) > 0) {
+          cl += " bx-ie bx-ie" + ieVersion;
+          if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) {
+            cl += " bx-quirks";
+          }
+        } else if (/Opera/.test(ua)) {
+          cl += " bx-opera";
+        } else if (/Gecko/.test(ua)) {
+          cl += " bx-firefox";
+        }
+        if (/Macintosh/i.test(ua)) {
+          cl += " bx-mac";
+        }
+        ht.className = htc ? htc + " " + cl : cl;
+        function isDoctype() {
+          if (d.compatMode) {
+            return d.compatMode == "CSS1Compat";
+          }
+          return d.documentElement && d.documentElement.clientHeight;
+        }
+        function getIeVersion() {
+          if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) {
+            return -1;
+          }
+          var rv = -1;
+          if (!!w.MSStream && !w.ActiveXObject && "ActiveXObject" in w) {
+            rv = 11;
+          } else if (!!d.documentMode && d.documentMode >= 10) {
+            rv = 10;
+          } else if (!!d.documentMode && d.documentMode >= 9) {
+            rv = 9;
+          } else if (d.attachEvent && !/Opera/.test(ua)) {
+            rv = 8;
+          }
+          if (rv == -1 || rv == 8) {
+            var re;
+            if (n.appName == "Microsoft Internet Explorer") {
+              re = new RegExp("MSIE ([0-9]+[\.0-9]*)");
+              if (re.exec(ua) != null) {
+                rv = parseFloat(RegExp.$1);
+              }
+            } else if (n.appName == "Netscape") {
+              rv = 11;
+              re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");
+              if (re.exec(ua) != null) {
+                rv = parseFloat(RegExp.$1);
+              }
+            }
+          }
+          return rv;
+        }
+      })(window, document, navigator);</script><link href="/bitrix/cache/css/s1/general/kernel_main/kernel_main_v1.css?166485807210536" type="text/css" rel="stylesheet"><link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?16050888812003" type="text/css" rel="stylesheet"><link href="/bitrix/js/main/popup/dist/main.popup.bundle.css?160645952526445" type="text/css" rel="stylesheet"><link href="/bitrix/js/fileman/sticker.css?160508886127011" type="text/css" rel="stylesheet"><link href="/bitrix/js/main/core/css/core_panel.css?160508885568528" type="text/css" rel="stylesheet"><link href="/bitrix/cache/css/s1/general/page_f182095ecbed92b29e6b4ec5e3185205/page_f182095ecbed92b29e6b4ec5e3185205_v1.css?1664864651247" type="text/css" rel="stylesheet"><link href="/bitrix/cache/css/s1/general/template_a4dbde8aeea6cbacfe9aa6eb30103d99/template_a4dbde8aeea6cbacfe9aa6eb30103d99_v1.css?1667373730767904" type="text/css" data-template-style="true" rel="stylesheet"><link href="/bitrix/panel/main/popup.css?160508885523084" type="text/css" data-template-style="true" rel="stylesheet"><link href="/bitrix/panel/main/admin-public.css?160508885581795" type="text/css" data-template-style="true" rel="stylesheet"><link href="/bitrix/panel/main/hot_keys.css?16050888553558" type="text/css" data-template-style="true" rel="stylesheet"><link href="/bitrix/themes/.default/pubstyles.css?160508885550596" type="text/css" data-template-style="true" rel="stylesheet"><style>@media only screen and (max-width: 900px) {
+        .wrap-search-dropdown-mobile {
+          display: none !important;
+        }
+      }</style><title>Мои заказы</title><meta name="yandex-verification" content="92ace6cf03bf36ab"><meta name="google-site-verification" content="zydBzz8MpPQnKewu5XlZrbZjbUIuOiz2oU-kDh3XTHI"></head><body><section id="event-modal" class="modal modal-event" data-modal="modal-event"></section><script type="text/template" id="popup-template-general"><div class="wrap-popup-pane popups-plugin">
+      	<div class="popup-pane">
+      		<div class="popup-pane__title">{{{title}}}
+      		</div>
+      		<div class = 'popup-pane__body'>{{{text}}}</div>
+      		<div class="popup-pane__footer">
+      			<a class="btn" onclick = 'BX.onCustomEvent("CPopupFnOk", [{{{uniqId}}}]);' href="javascript:void(0);">{{{btnOkTitle}}}</a>
+      		</div>
+      	</div>
+      </div></script><script type="text/template" id="popup-manager-contact"><div class="wrap-popup-pane popups-plugin">
+          <div class="popup-pane">
+              <div class="popup-pane__title">{{{title}}}
+              </div>
+              <div class = 'popup-pane__body'>
+                  <div class="manager-contact-pane">
+                      <div class="manager-contact-pane__title">Иванченко Константин Сергеевич</div>
+                      <div class="manager-contact-pane__cont">
+                                                                      <a href="mailto:kivanchenko@volgograd.daichi.ru">
+                              <span class="ico-mail">
+                                  <svg class="ico-svg">
+                                    <use xlink:href="#ico-mail"></use>
+                                  </svg>
+                              </span>
+      		                    kivanchenko@volgograd.daichi.ru                        </a>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="popup-pane__footer">
+                  <a class="btn" onclick = 'BX.onCustomEvent("CPopupFnOk", [{{{uniqId}}}]);' href="javascript:void(0);">{{{btnOkTitle}}}</a>
+              </div>
+          </div>
+      </div></script><script type="text/template" id="popup-city-selector"><div class="wrap-popup-pane popups-plugin">
+          <div class="popup-pane">
+              <div class="popup-pane__title">{{{title}}}
+              </div>
+              <div class = 'popup-pane__body'>
+                  <div class="popup-city__text">Выберите свой город</div>
+
+      <div class="popup-city__search">
+          <div class="field-select2">
+                      <div class="field-select2-label">Ваш город</div>
+                      <select data-placeholder="Москва" name="HEADER_USER_CITY" id="HEADER_USER_CITY" style="width: 100%" data-type="searchpopup" data-dropdown-class="is--in-popup">
+                          </select>
+      	        </div>
+      </div>
+
+              </div>
+              <div class="popup-pane__footer">
+                  <a class="btn" onclick = 'BX.onCustomEvent("CPopupFnOk", [{{{uniqId}}}]);' href="javascript:void(0);">{{{btnOkTitle}}}</a>
+              </div>
+          </div>
+      </div></script><script type="text/template" id="popup-template-yes-no-question"><div class="wrap-popup-pane popups-plugin">
+          <div class="popup-pane">
+              <div class="popup-pane__title">{{{title}}}
+              </div>
+              <div class = 'popup-pane__body'>{{{text}}}</div>
+              <div class="popup-pane__footer">
+                  <a class="btn" onclick = 'BX.onCustomEvent("CPopupFnOk", [{{{uniqId}}}]);' href="javascript:void(0);">{{{btnOkTitle}}}</a>
+                  <a class="btn btn_border btn_border-blue" onclick = 'BX.onCustomEvent("CPopupFnCancel", [{{{uniqId}}}]);' href="javascript:void(0);">{{{btnCancelTitle}}}</a>
+              </div>
+          </div>
+      </div></script><div id="panel"><!--[if lte IE 7]>
+        <style type="text/css">
+          #bx-panel {
+            display: none !important;
+          }
+        </style>
+        <div id="bx-panel-error">
+          Административная панель не поддерживает Internet Explorer версии 7 и ниже. Установите современный браузер
+          <a href="http://www.firefox.com">Firefox</a>, <a href="http://www.google.com/chrome/">Chrome</a>,
+          <a href="http://www.opera.com">Opera</a> или
+          <a href="http://www.microsoft.com/windows/internet-explorer/">Microsoft Edge</a>.
+        </div><!
+      [endif]--><div style="display: none; overflow: hidden" id="bx-panel-back"></div><div id="bx-panel" class="bx-panel-folded"><div id="bx-panel-top"><div id="bx-panel-top-gutter"></div><div id="bx-panel-tabs"><a id="bx-panel-menu" href="" onmouseover="BX.hint(this, 'Меню', 'Быстрый переход на любую страницу Административной части.')"><span id="bx-panel-menu-icon"></span><span id="bx-panel-menu-text">Меню</span></a><div id="bx-panel-btn-wrap"><a id="bx-panel-view-tab"><span>Сайт</span></a> <a id="bx-panel-admin-tab" href="/bitrix/admin/index.php?lang=ru&amp;back_url_pub=%2Fpersonal%2Forder%2F"><span>Администрирование</span></a></div><a class="adm-header-notif-block" id="adm-header-notif-block" onclick="return BX.adminInformer.Toggle(this);" href="" title="Просмотр уведомлений"><span class="adm-header-notif-icon"></span><span id="adm-header-notif-counter" class="adm-header-notif-counter">7</span></a><a id="bx-panel-clear-cache" href="" onclick="BX.clearCache(); return false;"><span id="bx-panel-clear-cache-icon"></span><span id="bx-panel-clear-cache-text">Сбросить кеш</span></a></div><div id="bx-panel-userinfo"><a href="/bitrix/admin/user_edit.php?lang=ru&ID=32" id="bx-panel-user" onmouseover="BX.hint(this, 'Быстрый переход на страницу редактирования параметров пользователя.')"><span id="bx-panel-user-icon"></span><span id="bx-panel-user-text">Татьяна Маврина</span></a><a href="/personal/order/?logout=yes" id="bx-panel-logout" onmouseover="BX.hint(this, 'Выход пользователя из системы. (&amp;nbsp;Ctrl+Alt+O&amp;nbsp;) ')">Выйти</a><a href="/personal/order/?bitrix_include_areas=Y" id="bx-panel-toggle" class="bx-panel-toggle-off" onmouseover="BX.hint(this, 'Режим правки', 'Включение режима контекстного редактирования сайта. При включенном режиме наведите курсор на выбранный блок информации и используйте всплывающие панели инструментов. (&amp;nbsp;Ctrl+Alt+D&amp;nbsp;) ')"><span id="bx-panel-switcher-gutter-left"></span><span id="bx-panel-toggle-indicator"><span id="bx-panel-toggle-icon"></span><span id="bx-panel-toggle-icon-overlay"></span></span><span class="bx-panel-break"></span><span id="bx-panel-toggle-caption">Режим правки</span><span class="bx-panel-break"></span><span id="bx-panel-toggle-caption-mode"><span id="bx-panel-toggle-caption-mode-off">выключен</span><span id="bx-panel-toggle-caption-mode-on">включен</span></span><span id="bx-panel-switcher-gutter-right"></span></a><a href="" id="bx-panel-expander" onmouseover="BX.hint(this, 'Развернуть', 'Развернуть Панель управления. (&amp;nbsp;Ctrl+Alt+E&amp;nbsp;) ')"><span id="bx-panel-expander-text">Развернуть</span><span id="bx-panel-expander-arrow"></span></a><a id="bx-panel-hotkeys" href="javascript:void(0)" onclick="BXHotKeys.ShowSettings();" onmouseover="BX.hint(this, 'Настройки горячих клавиш (&amp;nbsp;Ctrl+Alt+P&amp;nbsp;) ')"></a><a href="javascript:void(0)" id="bx-panel-pin" onmouseover="BX.hint(this, 'Фиксация Панели управления в верхней части экрана.')"></a></div></div><div id="bx-panel-site-toolbar"><div id="bx-panel-buttons-gutter"></div><div id="bx-panel-switcher"><a href="" id="bx-panel-hider" onmouseover="BX.hint(this, 'Свернуть', 'Свернуть Панель управления. (&amp;nbsp;Ctrl+Alt+E&amp;nbsp;) ')">Свернуть<span id="bx-panel-hider-arrow"></span></a></div><div id="bx-panel-buttons"><div id="bx-panel-buttons-inner"><span class="bx-panel-button-group" data-group-id="0"><span class="bx-panel-button"><span class="bx-panel-button-inner"><a href="javascript:void(0)" onclick="(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?lang=ru&amp;site=s1&amp;templateID=general&amp;path=%2Fpersonal%2Forder%2F&amp;back_url=%2Fpersonal%2Forder%2F&amp;siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show();BX.removeClass(this.parentNode.parentNode, 'bx-panel-button-icon-active');" id="bx_topmenu_btn_create"><span class="bx-panel-button-icon bx-panel-create-page-icon"></span></a><a id="bx_topmenu_btn_create_menu" href="javascript:void(0)"><span class="bx-panel-button-text">Создать<span class="bx-panel-break"></span>страницу&nbsp;<span class="bx-panel-button-arrow"></span></span></a></span></span><span class="bx-panel-button"><span class="bx-panel-button-inner"><a href="javascript:void(0)" onclick="(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?lang=ru&amp;site=s1&amp;templateID=general&amp;newFolder=Y&amp;path=%2Fpersonal%2Forder%2F&amp;back_url=%2Fpersonal%2Forder%2F&amp;siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show();BX.removeClass(this.parentNode.parentNode, 'bx-panel-button-icon-active');" id="bx_topmenu_btn_create_section"><span class="bx-panel-button-icon bx-panel-create-section-icon"></span></a><a id="bx_topmenu_btn_create_section_menu" href="javascript:void(0)"><span class="bx-panel-button-text">Создать<span class="bx-panel-break"></span>раздел&nbsp;<span class="bx-panel-button-arrow"></span></span></a></span></span></span><span class="bx-panel-button-separator"></span><span class="bx-panel-button-group" data-group-id="1"><span class="bx-panel-button"><span class="bx-panel-button-inner"><a href="javascript:void(0)" onclick="(new BX.CEditorDialog({'content_url':'/bitrix/admin/public_file_edit.php?lang=ru&amp;path=%2Fpersonal%2Forder%2Findex.php&amp;site=s1&amp;back_url=%2Fpersonal%2Forder%2F&amp;templateID=general&amp;siteTemplateId=general','width':'780','height':'470','min_width':'780','min_height':'400'})).Show();BX.removeClass(this.parentNode.parentNode, 'bx-panel-button-icon-active');" id="bx_topmenu_btn_edit"><span class="bx-panel-button-icon bx-panel-edit-page-icon"></span></a><a id="bx_topmenu_btn_edit_menu" href="javascript:void(0)"><span class="bx-panel-button-text">Изменить<span class="bx-panel-break"></span>страницу&nbsp;<span class="bx-panel-button-arrow"></span></span></a></span></span><span class="bx-panel-button"><span class="bx-panel-button-inner"><a href="javascript:void(0)" onclick="(new BX.CDialog({'content_url':'/bitrix/admin/public_folder_edit.php?lang=ru&amp;site=s1&amp;path=%2Fpersonal%2Forder%2F&amp;back_url=%2Fpersonal%2Forder%2F&amp;siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show();BX.removeClass(this.parentNode.parentNode, 'bx-panel-button-icon-active');" id="bx_topmenu_btn_edit_section"><span class="bx-panel-button-icon bx-panel-edit-section-icon"></span></a><a id="bx_topmenu_btn_edit_section_menu" href="javascript:void(0)"><span class="bx-panel-button-text">Изменить<span class="bx-panel-break"></span>раздел&nbsp;<span class="bx-panel-button-arrow"></span></span></a></span></span></span><span class="bx-panel-button-separator"></span><span class="bx-panel-button-group" data-group-id="2"><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" id="bx_topmenu_btn_menus"><span class="bx-panel-small-button-icon bx-panel-menu-icon"></span><span class="bx-panel-small-button-text">Меню</span><span class="bx-panel-small-single-button-arrow"></span></a></span></span><span class="bx-panel-break"></span><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" onclick="(new BX.CDialog({'content_url':'/bitrix/admin/public_structure.php?lang=ru&amp;site=s1&amp;path=%2Fpersonal%2Forder%2Findex.php&amp;templateID=general&amp;siteTemplateId=general','width':'350','height':'470'})).Show();BX.removeClass(this.parentNode.parentNode, 'bx-panel-small-button-text-active')" id="bx_topmenu_btn_structure"><span class="bx-panel-small-button-icon bx-panel-site-structure-icon"></span><span class="bx-panel-small-button-text">Структура</span></a><a href="javascript:void(0)" class="bx-panel-small-button-arrow" id="bx_topmenu_btn_structure_menu"><span class="bx-panel-small-button-arrow"></span></a></span></span><span class="bx-panel-break"></span><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" onclick="(new BX.CAdminDialog({'content_url':'/bitrix/admin/public_seo_tools.php?lang=ru&amp;bxpublic=Y&amp;from_module=seo&amp;site=s1&amp;path=%2Fpersonal%2Forder%2Findex.php&amp;title_final=0JzQvtC4INC30LDQutCw0LfRiw%3D%3D&amp;title_changer_name=bitrix%3Asale.personal.order&amp;title_changer_link=&amp;title_win_final=&amp;title_win_changer_name=&amp;title_win_changer_link=&amp;sessid=990042299c10c98b7dbb057a8ddd26ea&amp;back_url=%2Fpersonal%2Forder%2F&amp;siteTemplateId=general','width':'920','height':'400'})).Show();BX.removeClass(this.parentNode.parentNode, 'bx-panel-small-button-active')" id="bx_topmenu_btn_seo"><span class="bx-panel-small-button-icon bx-panel-seo-icon"></span><span class="bx-panel-small-button-text">SEO</span></a></span></span></span><span class="bx-panel-button-separator"></span><span class="bx-panel-button-group" data-group-id="3"><span class="bx-panel-button"><span class="bx-panel-button-inner"><a href="javascript:void(0)" onclick="BX.clearCache();BX.removeClass(this.parentNode.parentNode, 'bx-panel-button-icon-active');" id="bx_topmenu_btn_0"><span class="bx-panel-button-icon bx-panel-clear-cache-icon"></span></a><a id="bx_topmenu_btn_0_menu" href="javascript:void(0)"><span class="bx-panel-button-text">Сбросить<span class="bx-panel-break"></span>кеш&nbsp;<span class="bx-panel-button-arrow"></span></span></a></span></span></span><span class="bx-panel-button-separator"></span><span class="bx-panel-button-group" data-group-id="4"><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" id="bx_topmenu_btn_components"><span class="bx-panel-small-button-icon bx-panel-components-icon"></span><span class="bx-panel-small-button-text">Компоненты</span><span class="bx-panel-small-single-button-arrow"></span></a></span></span><span class="bx-panel-break"></span><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" onclick="jsUtils.Redirect([], '/bitrix/admin/template_edit.php?lang=ru&amp;ID=general');BX.removeClass(this.parentNode.parentNode, 'bx-panel-small-button-text-active')" id="bx_topmenu_btn_1"><span class="bx-panel-small-button-icon bx-panel-site-template-icon"></span><span class="bx-panel-small-button-text">Шаблон сайта</span></a><a href="javascript:void(0)" class="bx-panel-small-button-arrow" id="bx_topmenu_btn_1_menu"><span class="bx-panel-small-button-arrow"></span></a></span></span><span class="bx-panel-break"></span><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="/personal/order/?show_page_exec_time=Y&amp;show_include_exec_time=Y&amp;show_sql_stat=Y" onclick=";BX.removeClass(this.parentNode.parentNode, 'bx-panel-small-button-text-active')" id="bx_topmenu_btn_2"><span class="bx-panel-small-button-icon bx-panel-performance-icon"></span><span class="bx-panel-small-button-text">Отладка</span></a><a href="javascript:void(0)" class="bx-panel-small-button-arrow" id="bx_topmenu_btn_2_menu"><span class="bx-panel-small-button-arrow"></span></a></span></span></span><span class="bx-panel-button-separator"></span><span class="bx-panel-button-group" data-group-id="5"><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" id="bx_topmenu_btn_3"><span class="bx-panel-small-button-icon bx-panel-statistics-icon"></span><span class="bx-panel-small-button-text">Статистика</span><span class="bx-panel-small-single-button-arrow"></span></a></span></span><span class="bx-panel-break"></span><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" onclick="(new BX.CAdminDialog({'content_url':'/bitrix/admin/short_uri_edit.php?lang=ru&amp;public=Y&amp;bxpublic=Y&amp;str_URI=%2Fpersonal%2Forder%2F&amp;site=s1&amp;back_url=%2Fpersonal%2Forder%2F&amp;siteTemplateId=general','width':'770','height':'270'})).Show();BX.removeClass(this.parentNode.parentNode, 'bx-panel-small-button-text-active')" id="bx_topmenu_btn_4"><span class="bx-panel-small-button-icon bx-panel-short-url-icon"></span><span class="bx-panel-small-button-text">Короткий URL</span></a><a href="javascript:void(0)" class="bx-panel-small-button-arrow" id="bx_topmenu_btn_4_menu"><span class="bx-panel-small-button-arrow"></span></a></span></span><span class="bx-panel-break"></span><span class="bx-panel-small-button"><span class="bx-panel-small-button-inner"><a href="javascript:void(0)" onclick="if (window.oBXSticker){window.oBXSticker.AddSticker();};BX.removeClass(this.parentNode.parentNode, 'bx-panel-small-button-text-active')" id="bx_topmenu_btn_5"><span class="bx-panel-small-button-icon bx-panel-small-stickers-icon"></span><span class="bx-panel-small-button-text">Стикеры</span></a><a href="javascript:void(0)" class="bx-panel-small-button-arrow" id="bx_topmenu_btn_5_menu"><span class="bx-panel-small-button-arrow"></span></a></span></span></span><span class="bx-panel-button-separator"></span><span class="bx-panel-button-group" data-group-id="6"><span class="bx-panel-button"><span class="bx-panel-button-inner"><a href="/?add_new_site_sol=sol&amp;sessid=990042299c10c98b7dbb057a8ddd26ea" onclick=";BX.removeClass(this.parentNode.parentNode, 'bx-panel-button-icon-active');" id="bx_topmenu_btn_solutions_wizard"><span class="bx-panel-button-icon bx-panel-install-solution-icon"></span></a><a id="bx_topmenu_btn_solutions_wizard_menu" href="javascript:void(0)"><span class="bx-panel-button-text">Протестировать<span class="bx-panel-break"></span>новое решение&nbsp;<span class="bx-panel-button-arrow"></span></span></a></span></span></span></div></div></div></div><div class="adm-informer" id="admin-informer" style="display: none; top: 48px; left: 316px" onclick="return BX.adminInformer.OnInnerClick(event);"><div class="adm-informer-header">Новые уведомления</div><div class="adm-informer-item adm-informer-item-red" style="display: block"><div class="adm-informer-item-title">Автокомпозитный сайт</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-0">Уникальная технология позволит ускорить скорость загрузки страниц вашего сайта. <span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-0"><a href="/bitrix/admin/composite.php?lang=ru">Включить АвтоКомпозит</a></div></div></div><div class="adm-informer-item adm-informer-item-green" style="display: block"><div class="adm-informer-item-title">Оцените решение Маркетплейс</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-1">Вы используете решение <b>Модуль для общего функционала</b> (sebekon.common).<br>Поделитесь своими впечатлениями.<br>Что понравилось?<br>Есть ли замечания?<br>Ваш отзыв очень важен для нас! <span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-1"><a href="javascript:void(0)" onclick="hideMpAnswer(this, 'sebekon.common')" style="float: right !important; font-size: 0.8em !important">Скрыть</a><a href="http://marketplace.1c-bitrix.ru/solutions/sebekon.common/#tab-rating-link" target="_blank" onclick="hideMpAnswer(this, 'sebekon.common')">Оставить отзыв</a></div></div></div><div class="adm-informer-item adm-informer-item-green" style="display: block"><div class="adm-informer-item-title">Оцените решение Маркетплейс</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-2">Вы используете решение <b>Пользовательское свойcтво тип HTML/Визуальный редактор</b> (d2mg.ufhtml).<br>Поделитесь своими впечатлениями.<br>Что понравилось?<br>Есть ли замечания?<br>Ваш отзыв очень важен для нас! <span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-2"><a href="javascript:void(0)" onclick="hideMpAnswer(this, 'd2mg.ufhtml')" style="float: right !important; font-size: 0.8em !important">Скрыть</a><a href="http://marketplace.1c-bitrix.ru/solutions/d2mg.ufhtml/#tab-rating-link" target="_blank" onclick="hideMpAnswer(this, 'd2mg.ufhtml')">Оставить отзыв</a></div></div></div><div class="adm-informer-item adm-informer-item-green" style="display: block"><div class="adm-informer-item-title">Оцените решение Маркетплейс</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-3">Вы используете решение <b>Стоимость доставки</b> (sebekon.deliveryprice).<br>Поделитесь своими впечатлениями.<br>Что понравилось?<br>Есть ли замечания?<br>Ваш отзыв очень важен для нас! <span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-3"><a href="javascript:void(0)" onclick="hideMpAnswer(this, 'sebekon.deliveryprice')" style="float: right !important; font-size: 0.8em !important">Скрыть</a><a href="http://marketplace.1c-bitrix.ru/solutions/sebekon.deliveryprice/#tab-rating-link" target="_blank" onclick="hideMpAnswer(this, 'sebekon.deliveryprice')">Оставить отзыв</a></div></div></div><div class="adm-informer-item adm-informer-item-blue" style="display: block"><div class="adm-informer-item-title">Проактивная защита</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-4"><div class="adm-informer-item-section"><span class="adm-informer-item-l"><span class="adm-informer-strong-text">Защита выключена :(<br></span><span>Безопасность сайта значительно снижена.</span></span></div><span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-4"><a href="/bitrix/admin/security_filter.php?lang=ru">Включить защиту</a></div></div></div><div class="adm-informer-item adm-informer-item-peach" style="display: block"><div class="adm-informer-item-title">Резервное копирование</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-5"><div class="adm-informer-item-section"><span class="adm-informer-item-l"><span class="adm-informer-strong-text">Всего:</span> 10 ГБ </span><span class="adm-informer-item-r"><span class="adm-informer-strong-text">Доступно:</span> 10 ГБ</span></div><div class="adm-informer-status-bar-block"><div class="adm-informer-status-bar-indicator" style="width: 0%"></div><div class="adm-informer-status-bar-text">0%</div></div><span class="adm-informer-strong-text">Не выполнялось.</span> <span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-5"><a href="/bitrix/admin/dump.php?lang=ru">Рекомендуется выполнить</a></div></div></div><div class="adm-informer-item adm-informer-item-blue" style="display: block"><div class="adm-informer-item-title">Сканер безопасности</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-6"><div class="adm-informer-item-section"><span class="adm-informer-item-l"><span>Сканирование выполнялось очень давно либо не выполнялось вовсе</span></span></div><span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-6"><a href="/bitrix/admin/security_scanner.php?lang=ru">Перейти к сканированию</a></div></div></div><div class="adm-informer-item adm-informer-item-gray" style="display: none"><div class="adm-informer-item-title">Обновления</div><div class="adm-informer-item-body"><div class="adm-informer-item-html" id="adm-informer-item-html-7"><span class="adm-informer-strong-text">Версия системы 20.200.260</span><br>Последнее обновление<br>27.05.2021 10:15 <span class="adm-informer-icon"></span></div><div class="adm-informer-item-footer" id="adm-informer-item-footer-7"><a href="/bitrix/admin/update_system.php?refresh=Y&lang=ru">Проверить обновления</a></div></div></div><a href="javascript:void(0);" class="adm-informer-footer adm-informer-footer-collapsed" hidefocus="true" id="adm-informer-footer" onclick="return BX.adminInformer.ToggleExtra();">Показать все (8) </a><span class="adm-informer-arrow"></span></div></div><div class="wrap is--personal-nav"><header class="wrap-header"><div class="wrap-header-top"><div class="header-top"><div class="header-city" data-dropdown-menu=""><a class="header-city__link has--arrow popup-city-selector" href="">Москва</a><div class="wrap-popup-pane wrap-popup-pane_city" id="popup-city"><div class="popup-pane popup-pane_city"><div class="popup-pane__title">Выбор города</div><div class="popup-pane__body"><div class="popup-city"><div class="popup-city__text">Выберите свой город</div><div class="popup-city__search"><div class="field-select2"><div class="field-select2-label">Ваш город</div><select data-placeholder="Москва" name="HEADER_USER_CITY" id="HEADER_USER_CITY" style="width: 100%" data-type="searchpopup" data-dropdown-class="is--in-popup"></select></div></div><div class="popup-city__footer"><a class="btn" id="popup-city-button" href="#">Ок</a></div></div></div></div></div></div><div class="wrap-header-top-nav"><ul class="header-top-nav"><li class="header-top-nav__item"><a class="header-top-nav__link" href="/promotions/">Акции</a></li><li class="header-top-nav__item"><a class="header-top-nav__link" href="/news/">Новости</a></li><li class="header-top-nav__item"><a class="header-top-nav__link" href="/business_club/">Даичи Бизнес-клуб</a></li><li class="header-top-nav__item"><a class="header-top-nav__link" href="/education_center/">Учебный центр</a></li><li class="header-top-nav__item"><a class="header-top-nav__link" href="/support/">Поддержка</a></li><li class="header-top-nav__item"><a class="header-top-nav__link" href="/about/">О «Даичи»</a></li><li class="header-top-nav__item"><a class="header-top-nav__link" href="/about/contacts/">Контакты</a></li></ul></div></div></div><div class="header-bottom" id="header-bottom"><div class="header"><div class="header-logo"><a href="/"><img src="/local/templates/general//daichi-layout/build/images/logo.svg"></a></div><div class="header-main-nav-btn"><div class="wrap-main-nav-btn"><a class="main-nav-btn" href="#"><span class="ico-humb-cat"><span></span><span></span><span></span></span>Каталог</a></div></div><div class="header-search"><form action="/search/"><div class="search-pane"><div class="wrap-search-pane-input"><input class="search-pane-input" id="header-search-input" autocomplete="off" name="q" value="" type="text" placeholder="Поиск по оборудованию и документации"> <button type="submit" name="s" class="search-pane-btn"><span class="ico-search"><svg class="ico-svg"><use xlink:href="#ico-search"></use></svg></span></button> <button type="reset" class="search-pane-btn search-pane-btn_clear"><svg class="ico-svg"><use xlink:href="#ico-close"></use></svg></button></div></div></form></div><div class="header-toolbar"><div class="header-favorite"><a class="header-favorite__link is--active" href="/personal/favorites/"><i class="ico-favorite"><svg class="ico-svg"><use xlink:href="#ico-favorites"></use></svg> <span class="header-cart__count js-header-cart__count">8 </span></i><span>Избранное</span></a></div><div id="bx_basketFKauiI" class="bx-basket bx-opener"><!--'start_frame_cache_bx_basketFKauiI'--><div class="header-cart"><a class="header-cart__link" href="/personal/cart/"><span class="ico-cart"><svg class="ico-svg"><use xlink:href="#ico-h-cart"></use></svg> </span><span class="header-cart__title">Корзина</span></a></div><!--'end_frame_cache_bx_basketFKauiI'--></div><div class="header-login"><a class="header-login__link has--arrow js--open-tooltip" href="/personal/" data-tooltip-id="personal-dropdown" data-position="bottom-end">Мой кабинет</a><div class="is--hidden" id="personal-dropdown"><div class="dropdown-menu-dropdown dropdown-menu-dropdown_personal"><ul class="dropdown-menu-list"><li><a href="/personal/order/">Заказы</a></li><li><a href="/personal/discounts/">Скидки</a></li><li><a href="/personal/bonuses/"><div class="points"><div class="points-text"><span>Баллы</span></div><div class="d-points-chip main"><span class="logo"><svg><use xlink:href="/local/templates/general//bonus-assets/img/sprite.svg#d"></use></svg> </span><span class="value">16957</span></div></div></a></li><!--                            <li><a href="#">Второй пункт меню размером в две строчки</a></li>--><li><a href="/personal/profile/">Настройки профиля</a></li><li><a href="/personal/order/?logout=yes" class="exit">Выход</a></li></ul></div></div></div></div></div><div class="wrap-main-nav"><div class="main-nav"><div class="main-nav__col"><ul class="main-nav-list"><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/" class="main-nav-list__link">Кондиционирование</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/bytovye_konditsionery/" class="main-nav-list__link">Бытовые кондиционеры</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/multisplit_sistemy/" class="main-nav-list__link">Мультисплит-системы</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/polupromyshlennye_konditsionery/" class="main-nav-list__link">Полупромышленные кондиционеры</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/vozdukhoochistiteli/" class="main-nav-list__link">Воздухоочистители</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/aksessuary/" class="main-nav-list__link">Аксессуары</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/mobilnye_konditsionery/" class="main-nav-list__link">Мобильные кондиционеры</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/okonnye_konditsionery/" class="main-nav-list__link">Оконные кондиционеры</a></li><li class="main-nav-list__item"><a href="/catalog/konditsionirovanie/split_sistemy/" class="main-nav-list__link">Сплит-системы</a></li></ul></div><div class="main-nav__col"><ul class="main-nav-list"><li class="main-nav-list__item"><a href="/catalog/ventilyatsiya/" class="main-nav-list__link">Вентиляция</a></li><li class="main-nav-list__item"><a href="/catalog/ventilyatsiya/pritochno_vytyazhnye_ustanovki/" class="main-nav-list__link">Приточно-вытяжные установки</a></li><li class="main-nav-list__item"><a href="/catalog/ventilyatsiya/pritochnye_ustanovki/" class="main-nav-list__link">Приточные установки</a></li><li class="main-nav-list__item"><a href="/catalog/ventilyatsiya/vytyazhnye_sektsii/" class="main-nav-list__link">Вытяжные секции</a></li><li class="main-nav-list__item"><a href="/catalog/ventilyatsiya/kompaktnye_ventilyatsionnye_ustanovki/" class="main-nav-list__link">Компактные вентиляционные установки</a></li></ul></div><div class="main-nav__col"><ul class="main-nav-list"><li class="main-nav-list__item"><a href="/catalog/otoplenie/" class="main-nav-list__link">Отопление</a></li><li class="main-nav-list__item"><a href="/catalog/otoplenie/otopitelnye_kotly/" class="main-nav-list__link">Отопительные котлы</a></li></ul></div><div class="main-nav__col"><ul class="main-nav-list main-nav-list_spec"><li class="main-nav-list__item"><a class="main-nav-list__link" href="/stock/">Распродажа</a></li><li class="main-nav-list__item"><a class="main-nav-list__link" href="/specials/">Спецпредложения</a></li></ul><!--'start_frame_cache_y0XwfU'--><div class="main-nav-slider"><div class="main-nav-slider__img"><a target="_blank" href="/personal/"><img src="/upload/rk/9b4/9b49ece031e5019d3cabc32c3de449af.png"></a></div><div class="main-nav-slider__img"><a target="_blank" href="/catalog/"><img src="/upload/rk/9b4/9b49ece031e5019d3cabc32c3de449af.png"></a></div></div><!--'end_frame_cache_y0XwfU'--></div></div></div></div></header><div class="header-mobile"><div class="header-mobile__logo"><a href="/"><img src="/local/templates/general//daichi-layout/build/images/logo.svg"></a></div><div class="header-mobile__toolbar"><a class="header-mobile__btn js--mob-nav-open" href="#"><span class="ico-humburger"><span></span><span></span><span></span></span></a></div></div><div class="header-mobile-search"><div class="search-pane"><form action="/search/"><div class="wrap-search-pane-input"><input class="search-pane-input" autocomplete="off" name="q" value="" type="text" placeholder="Поиск по оборудованию и документации"> <button class="search-pane-btn"><span class="ico-search"><svg class="ico-svg"><use xlink:href="#ico-search"></use></svg></span></button> <button type="reset" class="search-pane-btn search-pane-btn_clear"><svg class="ico-svg"><use xlink:href="#ico-close"></use></svg></button></div></form></div></div><div class="wrap-mobile-catalog-nav"><div class="mobile-catalog-nav"><div class="mobile-catalog-nav__header"><!-- TODO: тут пусть клик по всему заголовку возвращает назад, добавлена иконка назад--><a class="mobile-catalog-nav__title js--back" href="/catalog/"><span class="mobile-catalog-nav__back"><svg class="ico-svg"><use xlink:href="#ico-arrow-back"></use></svg></span>Каталог</a><div class="mobile-catalog-nav__close"><a class="mobile-catalog-nav__link js--mobile-catalog-close" href="#"><svg class="ico-svg"><use xlink:href="#ico-close"></use></svg></a></div></div><div class="mobile-catalog-nav__body"><div class="mobile-catalog-nav-section"><a class="mobile-catalog-nav-section__title" href="/catalog/konditsionirovanie/">Кондиционирование</a><div class="mobile-catalog-nav-section__body"><ul class="mobile-catalog-nav-list"><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/bytovye_konditsionery/">Бытовые кондиционеры</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/multisplit_sistemy/">Мультисплит-системы</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/polupromyshlennye_konditsionery/">Полупромышленные кондиционеры</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/vozdukhoochistiteli/">Воздухоочистители</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/aksessuary/">Аксессуары</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/mobilnye_konditsionery/">Мобильные кондиционеры</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/okonnye_konditsionery/">Оконные кондиционеры</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/konditsionirovanie/split_sistemy/">Сплит-системы</a></li></ul></div></div><div class="mobile-catalog-nav-section"><a class="mobile-catalog-nav-section__title" href="/catalog/ventilyatsiya/">Вентиляция</a><div class="mobile-catalog-nav-section__body"><ul class="mobile-catalog-nav-list"><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/ventilyatsiya/pritochno_vytyazhnye_ustanovki/">Приточно-вытяжные установки</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/ventilyatsiya/pritochnye_ustanovki/">Приточные установки</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/ventilyatsiya/vytyazhnye_sektsii/">Вытяжные секции</a></li><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/ventilyatsiya/kompaktnye_ventilyatsionnye_ustanovki/">Компактные вентиляционные установки</a></li></ul></div></div><div class="mobile-catalog-nav-section"><a class="mobile-catalog-nav-section__title" href="/catalog/otoplenie/">Отопление</a><div class="mobile-catalog-nav-section__body"><ul class="mobile-catalog-nav-list"><li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act"><a class="mobile-catalog-nav-list__link" href="/catalog/otoplenie/otopitelnye_kotly/">Отопительные котлы</a></li></ul></div></div><div class="mobile-catalog-nav-section"><a class="mobile-catalog-nav-section__title is--no-dropdown" href="/stock/">Распродажа</a></div><div class="mobile-catalog-nav-section"><a class="mobile-catalog-nav-section__title is--no-dropdown" href="/specials/">Спецпредложения</a></div></div></div></div><div class="wrap-mobile-menu"><div class="mobile-menu"><div class="mobile-menu-header"><div class="header-city header-city_mobile"><a href="#"></a></div><a class="js--mob-nav-close is--open" href="#"><span class="ico-humburger"><span></span><span></span><span></span></span></a></div><div class="mobile-menu-top"><div class="mobile-menu-catalog"><a class="main-nav-mobile-btn js--mobile-catalog-open" href="#"><span class="ico-humb-cat"><span></span><span></span><span></span></span>Каталог</a></div><div id="bx_basketT0kNhm" class="bx-basket bx-opener"><!--'start_frame_cache_bx_basketT0kNhm'--><div class="header-cart"><a class="header-cart__link" href="/personal/cart/"><span class="ico-cart"><svg class="ico-svg"><use xlink:href="#ico-h-cart"></use></svg> </span><span class="header-cart__title">Корзина</span></a></div><!--'end_frame_cache_bx_basketT0kNhm'--></div></div><ul class="mobile-personal-nav-list"><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-home"></use></svg> </span><span class="mobile-personal-nav-list__text">Дашборд</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/bonuses/"><span class="ico-personal-nav"><img src="/local/templates/general//bonus-assets/img/d-chip-small.svg"> </span><span class="mobile-personal-nav-list__text">°D баллы</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/order/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-box"></use></svg> </span><span class="mobile-personal-nav-list__text">Заказы</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/discounts/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-percent"></use></svg> </span><span class="mobile-personal-nav-list__text">Мои скидки</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/favorites/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-favorites-nav"></use></svg> </span><span class="mobile-personal-nav-list__text">Избранное</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/users/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-account"></use></svg> </span><span class="mobile-personal-nav-list__text">Управление пользователями дилера</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/organizations/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-file"></use></svg> </span><span class="mobile-personal-nav-list__text">Список плательщиков</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/address/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-truck"></use></svg> </span><span class="mobile-personal-nav-list__text">Адреса доставки</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/support/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-lk-support"></use></svg> </span><span class="mobile-personal-nav-list__text">Поддержка</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/profile/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-profile"></use></svg> </span><span class="mobile-personal-nav-list__text">Настройки профиля</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/education/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="/local/templates/general//education_center/img/sprite.svg#education"></use></svg> </span><span class="mobile-personal-nav-list__text">Обучение</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/phoenix/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-lk-doc"></use></svg> </span><span class="mobile-personal-nav-list__text">Документация Феникс</span></a></li><li class="mobile-personal-nav-list__item"><a class="mobile-personal-nav-list__link" href="/personal/?logout=yes"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-signout"></use></svg> </span><span class="mobile-personal-nav-list__text">Выйти</span></a></li></ul><div class="mobile-menu-devider"></div><ul class="mobile-nav mobile-nav_gray"><li class="mobile-nav__item"><a class="mobile-nav__link" href="/promotions/">Акции</a></li><li class="mobile-nav__item"><a class="mobile-nav__link" href="/news/">Новости</a></li><li class="mobile-nav__item"><a class="mobile-nav__link" href="/business_club/">Даичи Бизнес-клуб</a></li><li class="mobile-nav__item"><a class="mobile-nav__link" href="/education_center/">Учебный центр</a></li><li class="mobile-nav__item"><a class="mobile-nav__link" href="/support/">Поддержка</a></li><li class="mobile-nav__item"><a class="mobile-nav__link" href="/about/">О «Даичи»</a></li><li class="mobile-nav__item"><a class="mobile-nav__link" href="/about/contacts/">Контакты</a></li></ul><div class="mobile-menu-devider"></div><ul class="mobile-nav"><li class="mobile-nav__item"><a class="mobile-nav__link" href="/personal/">Личный кабинет</a></li></ul></div></div><div class="personal-nav"><ul class="personal-nav-list"><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-home"></use></svg> </span><span class="personal-nav-list__text">Дашборд</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/bonuses/"><span class="ico-personal-nav"><img src="/local/templates/general//bonus-assets/img/d-chip-small.svg"> </span><span class="personal-nav-list__text">°D баллы</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/order/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-box"></use></svg> </span><span class="personal-nav-list__text">Заказы</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/discounts/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-percent"></use></svg> </span><span class="personal-nav-list__text">Мои скидки</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/favorites/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-favorites-nav"></use></svg> </span><span class="personal-nav-list__text">Избранное</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/users/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-account"></use></svg> </span><span class="personal-nav-list__text">Управление пользователями дилера</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/organizations/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-file"></use></svg> </span><span class="personal-nav-list__text">Список плательщиков</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/address/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-truck"></use></svg> </span><span class="personal-nav-list__text">Адреса доставки</span></a></li><li class="personal-nav-list__item personal-nav-list__item_dropdown"><a class="personal-nav-list__link" href="/support/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-lk-support"></use></svg> </span><span class="personal-nav-list__text">Поддержка</span></a><div class="personal-nav-list-dropdown"><ul class="personal-nav-list-dropdown-list"><li class="personal-nav-list-dropdown__item"><a href="/support/programs/">Программы подбора</a></li><li class="personal-nav-list-dropdown__item"><a href="/support/adv/">Рекламные материалы</a></li><li class="personal-nav-list-dropdown__item"><a href="/support/serts/">Сертификаты</a></li><li class="personal-nav-list-dropdown__item"><a href="/support/#support_page_pay">Способы оплаты</a></li><li class="personal-nav-list-dropdown__item"><a href="/support/#support_page_delivery">Способы получения</a></li><li class="personal-nav-list-dropdown__item"><a href="/support/request/">Гарантийное обращение</a></li><li class="personal-nav-list-dropdown__item"><a href="/support/price-lists/">Прайс-листы</a></li></ul></div></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/profile/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-profile"></use></svg> </span><span class="personal-nav-list__text">Настройки профиля</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/education/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="/local/templates/general//education_center/img/sprite.svg#education"></use></svg> </span><span class="personal-nav-list__text">Обучение</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/phoenix/"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-lk-doc"></use></svg> </span><span class="personal-nav-list__text">Документация Феникс</span></a></li><li class="personal-nav-list__item"><a class="personal-nav-list__link" href="/personal/?logout=yes"><span class="ico-personal-nav"><svg class="ico-svg"><use xlink:href="#ico-signout"></use></svg> </span><span class="personal-nav-list__text">Выйти</span></a></li></ul></div><div class="content"><div class="wrap-breadcrumbs"><ul class="breadcrumbs" itemprop="http://schema.org/breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li><li class="breadcrumbs__item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="/personal/" title="Личный кабинет" itemprop="item"><span itemprop="name">Личный кабинет</span></a><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__plain">Заказы</span></li></ul><div class="breadcrumbs-mobile"><a class="breadcrumbs-mobile__link" href="/personal/">&lt; Назад</a></div></div><section class="section-main"><h1>Мои заказы</h1><div class="search-pane search-pane_inline"><form class="wrap-search-pane-input"><input class="search-pane-input" id="searchOrders" type="text" placeholder="Поиск по заказам"> <button class="search-pane-btn"><span class="ico-search"><svg class="ico-svg"><use xlink:href="#ico-search"></use></svg></span></button> <button type="reset" class="search-pane-btn search-pane-btn_clear"><svg class="ico-svg"><use xlink:href="#ico-close"></use></svg></button></form></div><div class="filter-inline" id="container-orders-filter"><div class="filter-inline__head"><div class="filter-inline__h js--filter-inline-toggle">Фильтры <span class="ico-filter-inline-arrow"><svg class="ico-svg"><use xlink:href="#ico-arrow-small"></use></svg></span></div><a style="cursor: pointer" id="clearFilter">Очистить фильтры</a></div><form class="filter-inline__body" id="orders_filter"><div class="form-row"><div class="form-col-33"><div class="field-select2"><div class="field-select2-label" for="filter_status">Статус заказа</div><select name="filter_status" id="filter_status" class="field-input-select js-select-init"><option value="all">Все</option><option value="N">Новый</option><option value="CO">Оформлен</option><option value="DG">Ожидает поставки</option><option value="DW">Ожидает отгрузки</option><option value="DP">Частично готов к отгрузке</option><option value="DR">Готов к отгрузке</option><option value="F">Исполнен</option><option value="RC">Заявка на отмену</option><option value="CN">Отменен</option></select></div></div><div class="form-col-33"><div class="field-select2"><div class="field-select2-label" for="PROPS[CONTRAGENT_ID]">Плательщик</div><select name="PROPS[CONTRAGENT_ID]" id="PROPS[CONTRAGENT_ID]" class="field-input-select js-select-init"><option value="all">Все</option><option value="1094">ИП Грицик Николай Дмитриевич</option><option value="1089">ИП Маврина Татьяна Николаевна</option><option value="1091">ООО ''ВЭК-ЮГ''</option><option value="1093">ООО ''Гарант Климат''</option><option value="1090">ООО ''Климат Маркет''</option><option value="1092">ООО «Юфотерм»</option><option value="1102">Обломов Илья Ильич</option></select></div></div><div class="form-col-33"><div class="field-select2"><div class="field-select2-label" for="EMPLOYEE_ID">Заказ оформил</div><select name="EMPLOYEE_ID" id="EMPLOYEE_ID" class="field-input-select js-select-init"><option value="all">Все</option><option value="43">Киян Антон Евгеньевич</option><option value="39">Курбангалеев Дамир Фанисович</option><option value="26">Маврина Татьяна Николаевна</option></select></div></div><div class="form-col-33"><div class="field-select2"><div class="field-select2-label" for="PROPS[DELIVERY_TYPE]">Тип отгрузки</div><select name="PROPS[DELIVERY_TYPE]" id="PROPS[DELIVERY_TYPE]" class="field-input-select js-select-init"><option value="all">Все</option><option value="delivery">Доставка</option><option value="pickup">Самовывоз</option></select></div></div><div class="form-col-50"><div class="field"><label for="">Дата заказа</label> <span class="wrap-field-input wrap-field-input_icon"><input id="ORDER_DATE" name="ORDER_DATE" class="field-input field-input_date js-datepicker" type="text" placeholder="Не указана" value="02.11.2021 - 02.11.2022"><span class="ico-field-input"><svg class="ico-svg"><use xlink:href="#ico-calendar"></use></svg></span><!--if tooltip--> <!--  a(href="#", title=tooltip).btn.js-btn-tooltip--></span></div></div></div><div class="form-row"><div class="form-col-100"><div class="field"><label class="field-input-radio"><input type="checkbox" id="CN_SHOW" name="CN_SHOW" value="Y"><span>Показать отмененные</span> <input name="CN_SUBMIT" value="Y" type="hidden"></label></div></div></div></form></div><div class="panel panel_table"><div class="order-list-table"><div class="order-list-table-head"><div class="order-list-table-head__row"><div class="order-list-table-item__th order-list-table-item-col__first">Номер заказа</div><div class="order-list-table-item__th order-list-table-item-col__payer">Плательщик</div><div class="order-list-table-item__th order-list-table-item-col__shipment">Отгрузка</div><div class="order-list-table-item__th order-list-table-item-col__summ">Сумма</div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/542/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000238<br><span class="is--gray">02.11.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">07.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 42 637,32 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="542"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 542)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/541/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000237<br><span class="is--gray">02.11.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">07.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 23 589,72 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="541"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 541)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/540/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000236<br><span class="is--gray">02.11.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">07.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 43 068 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="540"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 540)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/539/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000235<br><span class="is--gray">01.11.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ООО ''Климат Маркет'' <span class="order-list-table__who">Курбангалеев Дамир</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">02.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 133 549,28 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/538/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000234<br><span class="is--gray">01.11.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">02.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 25 396,80 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="538"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 538)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/537/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000233<br><span class="is--gray">01.11.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">02.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 25 396,80 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="537"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 537)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/536/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000232<br><span class="is--gray">01.11.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ООО ''ВЭК-ЮГ'' <span class="order-list-table__who">Курбангалеев Дамир</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">02.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 112 255,04 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/530/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000231<br><span class="is--gray">31.10.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">01.11.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 4 662 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="530"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 530)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/529/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000230<br><span class="is--gray">13.10.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">14.10.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 2,14 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="529"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 529)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/528/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000229<br><span class="is--gray">11.10.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">13.10.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 18 020,53 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="528"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 528)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/527/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №527<br><span class="is--gray">06.10.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">07.10.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 26 270 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="527"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 527)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/526/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №526<br><span class="is--gray">05.10.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">10.10.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 28 513,68 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="526"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 526)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/524/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000227<br><span class="is--gray">29.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Грицик Николай Дмитриевич <span class="order-list-table__who">Курбангалеев Дамир</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">30.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 105 559,52 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/523/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №523<br><span class="is--gray">23.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ООО ''Гарант Климат'' <span class="order-list-table__who">Курбангалеев Дамир</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">24.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 105 559,52 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/522/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000224<br><span class="is--gray">22.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ООО «Юфотерм» <span class="order-list-table__who">Курбангалеев Дамир</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">24.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 105 559,52 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/521/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №VVER-000223<br><span class="is--gray">21.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ООО ''Гарант Климат'' <span class="order-list-table__who">Курбангалеев Дамир</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">23.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 105 559,52 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"><div class="order-list-status order-list-status_blue"><span class="ico-order-list-status"><svg class="ico-svg"><use xlink:href="#ico-bell"></use></svg></span>Есть неоплаченные счета по заказу</div></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/520/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №520<br><span class="is--gray">06.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">08.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 37 639,36 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="520"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 520)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/519/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №519<br><span class="is--gray">06.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">08.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 37 639,36 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="519"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 519)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/516/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №516<br><span class="is--gray">05.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">06.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 37 639,36 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="516"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 516)">Повторить заказ</span></span></div></div></div><div class="order-list-table-item js--order-list-table-detail" data-href="/personal/order/detail/511/"><div class="order-list-table-item__row"><div class="order-list-table-item-col__mobile-badge"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__first"><span class="table-mobile-title">Номер заказа</span> №511<br><span class="is--gray">05.09.2022</span></div><div class="order-list-table-item-col__payer"><span class="table-mobile-title">Плательщик</span> ИП Маврина Татьяна Николаевна <span class="order-list-table__who">Маврина Татьяна</span></div><div class="order-list-table-item-col__shipment"><span class="table-mobile-title">Отгрузка</span> <span class="order-shipment-status"><span class="order-shipment-status__body">Самовывоз<br><span class="is--gray">06.09.2022</span></span></span></div><div class="order-list-table-item-col__summ"><span class="table-mobile-title">Сумма</span> 37 639,36 ₽</div></div><div class="order-list-table-item__row"><div class="order-list-table-item-col__first is--mobile-hide"><span class="badge-status badge-status_gray">Оформлен</span></div><div class="order-list-table-item-col__payer"></div><div class="order-list-table-item-col__shipment">&nbsp;</div><div class="order-list-table-item-col__summ"><span class="is--link js--order-list-table-repeat" data-order="511"><span href="javascript:void(0)" onclick="COrderRepeat.run(event, 511)">Повторить заказ</span></span></div></div></div></div></div><a class="pagination-load-more" id="js-pagination-load-more" onclick="return (new CNewsShowMore()).processNewsShowMore($(this));" href="/personal/order/?PAGEN_1=2">Показать еще&nbsp;</a><div class="wrap-pagination" id="js-catalog-wrap-pagination-catalog-section"><ul class="pagination"><li class="pagination-item-prev"><a class="pagination-item-prev__link is--disable" href="javascript:void(0)"><span class="ico-pagination-prev"><svg class="ico-svg"><use xlink:href="#ico-arrow-small"></use></svg></span></a></li><li class="pagination-item pagination-item_act"><span>1</span></li><li class="pagination-item"><a class="pagination-item__link" href="/personal/order/?PAGEN_1=2">2</a></li><li class="pagination-item"><a class="pagination-item__link" href="/personal/order/?PAGEN_1=3">3</a></li><li class="pagination-item"><a class="pagination-item__link" href="/personal/order/?PAGEN_1=4">4</a></li><li class="pagination-item"><a class="pagination-item__link" href="/personal/order/?PAGEN_1=5">5</a></li><li class="pagination-item pagination-item_devider"><span>...</span></li><li class="pagination-item"><a class="pagination-item__link" href="/personal/order/?PAGEN_1=14">14</a></li><li class="pagination-item-next"><a class="pagination-item-next__link" href="/personal/order/?PAGEN_1=2"><span class="ico-pagination-next"><svg class="ico-svg"><use xlink:href="#ico-arrow-small"></use></svg></span></a></li></ul></div></section></div><div class="up-btn"><a class="up-btn__link js-up-btn" href="#">Наверх</a></div><div class="wrap-footer"><div class="footer"><div class="footer-row"><div class="footer-col footer-col_logo"><div class="footer-logo"><a href="/"><img src="/local/templates/general//daichi-layout/build/images/logo.svg"></a></div></div><div class="footer-col footer-col_nav"><div class="footer-nav-row"><div class="footer-nav-col"><ul class="footer-nav"><li class="footer-nav__item footer-nav__item_h"><a href="/catalog/konditsionirovanie/" class="main-nav-list__link">Кондиционирование</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/bytovye_konditsionery/" class="main-nav-list__link">Бытовые кондиционеры</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/multisplit_sistemy/" class="main-nav-list__link">Мультисплит-системы</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/polupromyshlennye_konditsionery/" class="main-nav-list__link">Полупромышленные кондиционеры</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/vozdukhoochistiteli/" class="main-nav-list__link">Воздухоочистители</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/aksessuary/" class="main-nav-list__link">Аксессуары</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/mobilnye_konditsionery/" class="main-nav-list__link">Мобильные кондиционеры</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/okonnye_konditsionery/" class="main-nav-list__link">Оконные кондиционеры</a></li><li class="footer-nav__item"><a href="/catalog/konditsionirovanie/split_sistemy/" class="main-nav-list__link">Сплит-системы</a></li></ul></div><div class="footer-nav-col"><ul class="footer-nav"><li class="footer-nav__item footer-nav__item_h"><a href="/catalog/ventilyatsiya/" class="main-nav-list__link">Вентиляция</a></li><li class="footer-nav__item"><a href="/catalog/ventilyatsiya/pritochno_vytyazhnye_ustanovki/" class="main-nav-list__link">Приточно-вытяжные установки</a></li><li class="footer-nav__item"><a href="/catalog/ventilyatsiya/pritochnye_ustanovki/" class="main-nav-list__link">Приточные установки</a></li><li class="footer-nav__item"><a href="/catalog/ventilyatsiya/vytyazhnye_sektsii/" class="main-nav-list__link">Вытяжные секции</a></li><li class="footer-nav__item"><a href="/catalog/ventilyatsiya/kompaktnye_ventilyatsionnye_ustanovki/" class="main-nav-list__link">Компактные вентиляционные установки</a></li></ul><ul class="footer-nav"><li class="footer-nav__item footer-nav__item_h"><a href="/catalog/otoplenie/" class="main-nav-list__link">Отопление</a></li><li class="footer-nav__item"><a href="/catalog/otoplenie/otopitelnye_kotly/" class="main-nav-list__link">Отопительные котлы</a></li></ul></div><div class="footer-nav-col"><ul class="footer-nav"><li class="footer-nav__item"><a class="footer-nav__link" href="/promotions/">Акции</a></li><li class="footer-nav__item"><a class="footer-nav__link" href="/news/">Новости</a></li><li class="footer-nav__item"><a class="footer-nav__link" href="/business_club/">Даичи Бизнес-клуб</a></li><li class="footer-nav__item"><a class="footer-nav__link" href="/education_center/">Учебный центр</a></li><li class="footer-nav__item"><a class="footer-nav__link" href="/support/">Поддержка</a></li><li class="footer-nav__item"><a class="footer-nav__link" href="/about/">О «Даичи»</a></li><li class="footer-nav__item"><a class="footer-nav__link" href="/about/contacts/">Контакты</a></li></ul></div></div></div><div class="footer-col"><span class="footer-phone"><span class="ico-phone"><svg class="ico-svg"><use xlink:href="#ico-phone"></use></svg></span><a href="tel:+78002014584">8 800 201-45-84</a><a href="tel:+74957373733">+7 495 737-37-33</a></span><span class="footer-mail"><span class="ico-mail"> <svg class="ico-svg"><use xlink:href="#ico-mail"></use></svg></span><a href="mailto:info@daichi.ru">info@daichi.ru</a></span></div></div></div></div><div class="wrap-footer-bottom"><div class="footer-bottom"><div class="footer-bottom-col footer-copyright">© Daichi 2022. Все права защищены.<br>Разработка сайта: <a href="https://www.sebekon.ru/">SEBEKON</a></div><div class="footer-bottom-col footer-policy"><a href="/privacy/">Политика об обработке<br>и защите персональных данных</a></div><div class="footer-bottom-col footer-addres"></div><div class="footer-bottom-col footer-social"><div class="social-pane"><a href="https://vk.com/daichiru"><span class="ico-social ico-social__vk"><svg class="ico-svg"><use xlink:href="#ico-vk"></use></svg></span></a></div></div></div></div></div><div class="svg-sprite"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 18 21" fill="none" id="ico-account" xmlns="http://www.w3.org/2000/svg"><path d="M1 20a8 8 0 1116 0M13 5a4 4 0 11-8 0 4 4 0 018 0z" stroke-width="1.5" stroke-linecap="round"/></symbol><symbol viewBox="0 0 24 24" id="ico-alert-warning" xmlns="http://www.w3.org/2000/svg"><path d="M13 7a1 1 0 11-2 0 1 1 0 012 0zM13 11a1 1 0 10-2 0v6a1 1 0 102 0v-6z" stroke="transparent"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z" stroke="transparent"/></symbol><symbol viewBox="0 0 23 20" id="ico-amount-cart" xmlns="http://www.w3.org/2000/svg"><path d="M20.358 5.373h-1.714L17.94 1.99C17.637.796 16.729 0 15.621 0h-6.55C7.86 0 6.953.796 6.65 1.99l-.705 3.383H4.434c-1.713 0-2.922 1.493-2.52 3.085.202.796.303 1.592.505 2.388.604-.299 1.41-.398 2.116-.398 3.225 0 5.845 2.587 5.845 5.77 0 .896-.201 1.792-.604 2.588h8.868c1.31 0 2.318-.796 2.62-2.09.605-2.786 1.21-5.572 1.714-8.258.202-1.592-1.008-3.085-2.62-3.085zM9.07 1.493h6.551c.403 0 .806.298.907.796l.706 2.985H7.457l.705-2.985c.101-.498.403-.796.907-.796z"/><path d="M7.559 15.522H4.535v-2.985H3.023v2.985H0v1.493h3.023V20h1.512v-2.985H7.56"/></symbol><symbol viewBox="0 0 8 13" fill="none" id="ico-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1L1 6.5 6.5 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 28 28" fill="none" id="ico-arrow-back" xmlns="http://www.w3.org/2000/svg"><path d="M5.833 14h16.334M11.667 8.167L5.833 14M11.667 19.834l-5.834-5.833" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 7 5" id="ico-arrow-down" xmlns="http://www.w3.org/2000/svg"><path d="M.667 0a.667.667 0 00-.52 1.083l2.666 3.333a.667.667 0 001.04 0l2.668-3.333A.667.667 0 006 0H.667z"/></symbol><symbol viewBox="0 0 6 10" id="ico-arrow-small" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.293 9.707a1 1 0 010-1.414L3.586 5 .293 1.707A1 1 0 011.707.293l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" stroke="transparent"/></symbol><symbol viewBox="0 0 21 23" id="ico-bell" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 18.208c0 .53-.427.959-.954.959h-5.728A3.826 3.826 0 0110.5 23a3.826 3.826 0 01-3.818-3.833H.955A.956.956 0 010 18.208c0-.529.427-.958.955-.958.834 0 1.263-.328 1.516-.68.287-.4.393-.91.393-1.237v-5.75c0-3.91 2.915-7.135 6.681-7.607V.958C9.545.43 9.973 0 10.5 0c.527 0 .954.43.954.958v1.018c3.768.472 6.682 3.698 6.682 7.607v5.75c0 .326.106.836.393 1.237.253.352.682.68 1.517.68.527 0 .954.43.954.958zM10.5 3.833h-.002c-3.162.001-5.725 2.575-5.725 5.75v5.75c0 .52-.122 1.236-.481 1.917h12.416a4.237 4.237 0 01-.48-1.917v-5.75c0-3.175-2.565-5.75-5.728-5.75zm0 17.25a1.913 1.913 0 01-1.91-1.916h3.82a1.913 1.913 0 01-1.91 1.916z" stroke="transparent"/></symbol><symbol viewBox="0 0 22 22" fill="none" id="ico-box" xmlns="http://www.w3.org/2000/svg"><path d="M20.713 6.368l-8.783 4.611a2 2 0 01-1.86 0L1.287 6.368M1 15.008V7.4a2 2 0 011.036-1.752l8-4.4a2 2 0 011.928 0l8 4.4A2 2 0 0121 7.4v7.609a2 2 0 01-1.07 1.77l-8 4.2a2 2 0 01-1.86 0l-8-4.2A2 2 0 011 15.01z" stroke-width="1.5"/></symbol><symbol viewBox="0 0 25 25" id="ico-calendar" xmlns="http://www.w3.org/2000/svg"><path d="M1.333 8.5h22" stroke-width="1.5"/><path d="M5.333 1.5v2M19.333 1.5v2" stroke-width="1.5" stroke-linecap="round"/><path d="M5.333 11.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5zM5.333 14.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5zM5.333 17.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5zM11.333 11.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5zM11.333 14.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5zM11.333 17.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5zM17.333 11.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5zM17.333 14.75a.75.75 0 000 1.5v-1.5zm2 1.5a.75.75 0 000-1.5v1.5zm-2 0h2v-1.5h-2v1.5z" stroke="transparent"/><rect x="1.333" y="2.5" width="22" height="20" rx="2" fill="transparent" stroke-width="1.5" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 20 18" fill="none" id="ico-card-checkout" xmlns="http://www.w3.org/2000/svg"><path d="M1 5h18M7.5 9H5M9 15H1M7 13l2 2-2 2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 11V4a3 3 0 013-3h12a3 3 0 013 3v8a3 3 0 01-3 3h-3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 24 24" id="ico-cart" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 3a1 1 0 011-1h4a1 1 0 01.978.79L8.808 16H20.18l1.84-9.196a1 1 0 011.96.392l-2 10A1 1 0 0121 18H8a1 1 0 01-.978-.79L4.192 4H1a1 1 0 01-1-1z" stroke="transparent"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 1a1 1 0 011 1v6.086l1.793-1.793a1 1 0 111.414 1.414l-3.5 3.5a1 1 0 01-1.414 0l-3.5-3.5a1 1 0 111.414-1.414L13.5 8.086V2a1 1 0 011-1z" stroke="transparent"/><circle cx="9" cy="22" r="2" stroke="transparent"/><circle cx="20" cy="22" r="2" stroke="transparent"/></symbol><symbol viewBox="0 0 11 8" id="ico-check-ok" xmlns="http://www.w3.org/2000/svg"><path d="M10.178.265a1 1 0 01.057 1.413l-5 5.5a1 1 0 01-1.386.081l-3.5-3a1 1 0 111.302-1.518l2.768 2.372L8.765.322a1 1 0 011.413-.057z" stroke="transparent"/></symbol><symbol viewBox="0 0 17 17" id="ico-close" xmlns="http://www.w3.org/2000/svg"><path d="M.293.293a1 1 0 011.414 0L15.85 14.435a1 1 0 11-1.414 1.414L.293 1.707a1 1 0 010-1.414z" stroke="transparent"/><path d="M.293 15.85a1 1 0 001.414 0L15.85 1.706A1 1 0 0014.435.293L.293 14.435a1 1 0 000 1.414z" stroke="transparent"/></symbol><symbol viewBox="0 0 22 22" fill="none" id="ico-close-thin" xmlns="http://www.w3.org/2000/svg"><path d="M1 20.5L20.5 1M21 20.5L1.5 1" stroke-width="1.5" stroke-linecap="round"/></symbol><symbol viewBox="0 0 24 24" fill="none" id="ico-download" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 16v5h19v-5M12 3v13m0 0l5-4.5M12 16l-4.5-4.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 23 21" fill="none" id="ico-edit" xmlns="http://www.w3.org/2000/svg"><path d="M1 20h21M6.617 15h2.969a1 1 0 00.707-.293l8.5-8.5a1 1 0 000-1.414l-3.066-3.067a1 1 0 00-1.434.02l-8.062 8.51a1 1 0 00-.268.578l-.34 3.056A1 1 0 006.617 15z" stroke-width="1.5" stroke-linecap="round"/></symbol><symbol viewBox="0 0 20 22" id="ico-favorites" xmlns="http://www.w3.org/2000/svg"><path d="M1 3v16.596c0 .89 1.074 1.336 1.705.709l6.59-6.551a1 1 0 011.41 0l6.59 6.55c.63.628 1.705.181 1.705-.708V3a2 2 0 00-2-2H3a2 2 0 00-2 2z" stroke-width="1.5"/></symbol><symbol viewBox="0 0 20 22" fill="none" id="ico-favorites-nav" xmlns="http://www.w3.org/2000/svg"><path d="M1 3v16.596c0 .89 1.074 1.336 1.705.709l6.59-6.551a1 1 0 011.41 0l6.59 6.55c.63.628 1.705.181 1.705-.708V3a2 2 0 00-2-2H3a2 2 0 00-2 2z" stroke-width="1.5"/></symbol><symbol viewBox="0 0 8 18" id="ico-fb" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.697 0h-.954c-2.652 0-4.81 2.202-4.81 4.91v2.07H.304A.309.309 0 000 7.292v2.483c0 .171.136.31.304.31h1.63v7.603c0 .172.136.312.304.312h2.43c.169 0 .305-.14.305-.312v-7.603h2.418a.307.307 0 00.305-.31V7.292a.309.309 0 00-.305-.312H4.973V4.91c0-.996.794-1.806 1.769-1.806h.955c.167 0 .303-.14.303-.311V.309C8 .14 7.864 0 7.697 0z" stroke="transparent"/></symbol><symbol viewBox="0 0 18 21" id="ico-file" xmlns="http://www.w3.org/2000/svg"><path d="M17 6h-4a1 1 0 01-1-1V1m4.414 3.414A2 2 0 0117 5.828V18a2 2 0 01-2 2H3a2 2 0 01-2-2V3a2 2 0 012-2h9.172a2 2 0 011.414.586l2.828 2.828z" fill="none" stroke-width="1.5"/></symbol><symbol viewBox="0 0 18 24" id="ico-file-def" xmlns="http://www.w3.org/2000/svg"><path d="M4 14a1 1 0 011-1h8a1 1 0 110 2H5a1 1 0 01-1-1zM5 17a1 1 0 100 2h5a1 1 0 100-2H5z" stroke="transparent"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1a1 1 0 011-1h9a1 1 0 01.707.293l7 7A1 1 0 0118 8v15a1 1 0 01-1 1H1a1 1 0 01-1-1V1zm2 1v20h14V9h-6a1 1 0 01-1-1V2H2zm9 1.414L14.586 7H11V3.414z" stroke="transparent"/></symbol><symbol viewBox="0 0 22 24" id="ico-file-pdf" xmlns="http://www.w3.org/2000/svg"><path d="M3.466 0a2 2 0 00-2 2v3a1 1 0 102 0V2h14v3a1 1 0 102 0V2a2 2 0 00-2-2h-14zM3.466 19a1 1 0 10-2 0v3a2 2 0 002 2h14a2 2 0 002-2v-3a1 1 0 10-2 0v3h-14v-3z" stroke="transparent"/><path fill-rule="evenodd" clip-rule="evenodd" d="M.858 16.066c-.264 0-.473-.077-.627-.231-.154-.154-.231-.363-.231-.627v-6.16c0-.257.07-.455.209-.594.14-.14.337-.209.594-.209h2.761c.843 0 1.5.213 1.969.638.47.425.704 1.02.704 1.782 0 .763-.235 1.357-.704 1.782-.47.425-1.126.638-1.969.638H1.716v2.123c0 .264-.077.473-.231.627-.154.154-.363.231-.627.231zm2.486-4.279c.858 0 1.287-.37 1.287-1.111 0-.748-.429-1.122-1.287-1.122H1.716v2.233h1.628zM8.37 16c-.256 0-.454-.07-.593-.209-.14-.14-.21-.337-.21-.594V9.048c0-.257.07-.455.21-.594.139-.14.337-.209.594-.209h2.21c.844 0 1.57.154 2.179.462a3.226 3.226 0 011.397 1.331c.322.58.484 1.272.484 2.079 0 .807-.162 1.503-.484 2.09a3.161 3.161 0 01-1.386 1.331c-.609.308-1.339.462-2.19.462h-2.21zm2.09-1.386c1.65 0 2.476-.832 2.476-2.497 0-1.657-.825-2.486-2.475-2.486H9.284v4.983h1.177z" stroke="transparent"/><path d="M16.408 15.835a.87.87 0 00.627.231c.257 0 .459-.077.605-.231.154-.154.231-.363.231-.627v-2.475h2.673c.279 0 .484-.055.616-.165.132-.11.198-.279.198-.506 0-.235-.066-.407-.198-.517-.132-.11-.337-.165-.616-.165h-2.673V9.598h2.893c.279 0 .484-.055.616-.165.132-.11.198-.279.198-.506 0-.235-.066-.407-.198-.517-.132-.11-.337-.165-.616-.165H16.98c-.256 0-.454.07-.594.209-.139.14-.209.337-.209.594v6.16a.87.87 0 00.231.627z" stroke="transparent"/></symbol><symbol viewBox="0 0 21 21" id="ico-grid" xmlns="http://www.w3.org/2000/svg"><path d="M1 2.9C1 1.85 1.85 1 2.9 1h3.8c1.05 0 1.9.85 1.9 1.9v3.8a1.9 1.9 0 01-1.9 1.9H2.9A1.9 1.9 0 011 6.7V2.9zM12.4 2.9c0-1.05.85-1.9 1.9-1.9h3.8c1.05 0 1.9.85 1.9 1.9v3.8a1.9 1.9 0 01-1.9 1.9h-3.8a1.9 1.9 0 01-1.9-1.9V2.9zM12.4 14.3c0-1.05.85-1.9 1.9-1.9h3.8c1.05 0 1.9.85 1.9 1.9v3.8a1.9 1.9 0 01-1.9 1.9h-3.8a1.9 1.9 0 01-1.9-1.9v-3.8zM1 14.3c0-1.05.85-1.9 1.9-1.9h3.8c1.05 0 1.9.85 1.9 1.9v3.8A1.9 1.9 0 016.7 20H2.9A1.9 1.9 0 011 18.1v-3.8z" fill="none" stroke-width="1.5"/></symbol><symbol viewBox="0 0 24 21" id="ico-h-cart" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.25 1A.75.75 0 011 .25h3.192a1.75 1.75 0 011.71 1.383l.561 2.617H21.78a1.75 1.75 0 011.716 2.093l-1.6 8a1.75 1.75 0 01-1.716 1.407H8.808a1.75 1.75 0 01-1.71-1.383L4.435 1.947a.25.25 0 00-.244-.197H1A.75.75 0 01.25 1zm6.535 4.75l1.779 8.302a.25.25 0 00.244.198H20.18a.25.25 0 00.245-.201l1.6-8a.25.25 0 00-.245-.299H6.785z" stroke="transparent"/><path d="M11 19a2 2 0 11-4 0 2 2 0 014 0zM20 21a2 2 0 100-4 2 2 0 000 4z" stroke="transparent"/></symbol><symbol viewBox="0 0 22 22" id="ico-home" xmlns="http://www.w3.org/2000/svg"><path d="M1 9.332a2 2 0 01.819-1.614l8-5.854a2 2 0 012.362 0l8 5.854A2 2 0 0121 9.332V19a2 2 0 01-2 2h-4.368a1 1 0 01-1-1v-2.878a1 1 0 00-1-1H9.368a1 1 0 00-1 1V20a1 1 0 01-1 1H3a2 2 0 01-2-2V9.332z" fill="none" stroke-width="1.5"/></symbol><symbol viewBox="0 0 22 14" fill="none" id="ico-humb" xmlns="http://www.w3.org/2000/svg"><path d="M0 1a1 1 0 011-1h20a1 1 0 110 2H1a1 1 0 01-1-1zM0 7a1 1 0 011-1h20a1 1 0 110 2H1a1 1 0 01-1-1zM1 12a1 1 0 100 2h20a1 1 0 100-2H1z" fill="#1A1A1A"/></symbol><symbol viewBox="0 0 22 22" id="ico-inst" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.777 6.01a5 5 0 10-1.467 9.893 5 5 0 001.467-9.892zM9.662 8.295a3 3 0 112.763 5.325 3 3 0 01-2.763-5.325z" stroke="transparent"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6 0a6 6 0 00-6 6v10a6 6 0 006 6h10a6 6 0 006-6V6a6 6 0 00-6-6H6zM2 6a4 4 0 014-4h10a4 4 0 014 4v10a4 4 0 01-4 4H6a4 4 0 01-4-4V6z" stroke="transparent"/><path d="M18 5.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" fill="#1A1A1A"/></symbol><symbol viewBox="0 0 21 23" id="ico-lk-doc" xmlns="http://www.w3.org/2000/svg"><g stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M15 5.474h-3.5a.885.885 0 01-.875-.895V1m3.862 3.055c.329.335.513.79.513 1.265v10.89c0 .989-.784 1.79-1.75 1.79H2.75C1.783 18 1 17.199 1 16.21V2.79C1 1.8 1.783 1 2.75 1h8.025c.464 0 .91.189 1.238.524l2.474 2.53z"/><path d="M7 18.348V20a2 2 0 002 2h9a2 2 0 002-2V10a2 2 0 00-2-2h-3"/></g></symbol><symbol viewBox="0 0 22 23" id="ico-lk-support" xmlns="http://www.w3.org/2000/svg"><g stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1 3a2 2 0 012-2h16a2 2 0 012 2v12.343a2 2 0 01-2 2h-2.21v3.114c0 .908-1.114 1.346-1.733.681l-2.937-3.157a2 2 0 00-1.465-.638H3a2 2 0 01-2-2V3zM5 5.5h12M5 9h12M5 13h12"/></g></symbol><symbol viewBox="0 0 22 24" id="ico-madal" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 18H3a2 2 0 01-2-2V3a2 2 0 012-2h16a2 2 0 012 2v13a2 2 0 01-2 2h-3m0-2v6.048a.5.5 0 01-.852.355l-1.796-1.785a.5.5 0 00-.704 0l-1.796 1.785a.5.5 0 01-.852-.355V16m7-3a4 4 0 11-8 0 4 4 0 018 0z" fill="none" stroke-width="1.5" stroke-linecap="round"/></symbol><symbol viewBox="0 0 25 18" id="ico-mail" xmlns="http://www.w3.org/2000/svg"><path d="M6.509 4.449A.75.75 0 105.49 5.55L6.51 4.45zM12.5 11l-.509.551a.75.75 0 001.018 0L12.5 11zm7.009-5.449A.75.75 0 1018.49 4.45L19.51 5.55zm-9.479 3.98A.75.75 0 108.97 8.47l1.06 1.06zM5.47 11.97a.75.75 0 101.06 1.06l-1.06-1.06zm11.06-3.5a.75.75 0 10-1.06 1.06l1.06-1.06zm2.44 4.56a.75.75 0 101.06-1.06l-1.06 1.06zM3 1.75h19V.25H3v1.5zM23.25 3v12h1.5V3h-1.5zM22 16.25H3v1.5h19v-1.5zM1.75 15V3H.25v12h1.5zM3 16.25c-.69 0-1.25-.56-1.25-1.25H.25A2.75 2.75 0 003 17.75v-1.5zM23.25 15c0 .69-.56 1.25-1.25 1.25v1.5A2.75 2.75 0 0024.75 15h-1.5zM22 1.75c.69 0 1.25.56 1.25 1.25h1.5A2.75 2.75 0 0022 .25v1.5zM3 .25A2.75 2.75 0 00.25 3h1.5c0-.69.56-1.25 1.25-1.25V.25zm2.491 5.301l6.5 6 1.018-1.102-6.5-6L5.49 5.55zm7.518 6l6.5-6L18.49 4.45l-6.5 6 1.018 1.102zM8.969 8.47l-3.5 3.5 1.061 1.06 3.5-3.5-1.06-1.06zm6.5 1.06l3.5 3.5 1.061-1.06-3.5-3.5-1.06 1.06z" stroke="transparent"/></symbol><symbol viewBox="0 0 21 22" id="ico-move" xmlns="http://www.w3.org/2000/svg"><path d="M1 5h15m0 0l-4-4m4 4l-4 4m8 7.5H5m0 0l4-4m-4 4l4 4" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 22 21" id="ico-percent" xmlns="http://www.w3.org/2000/svg"><path d="M.984 18.956a.75.75 0 001.032 1.088L.984 18.956zM21.016 2.044A.75.75 0 0019.984.956l1.032 1.088zm-19 18l19-18L19.984.956l-19 18 1.032 1.088zM6.25 4A2.25 2.25 0 014 6.25v1.5A3.75 3.75 0 007.75 4h-1.5zM4 6.25A2.25 2.25 0 011.75 4H.25A3.75 3.75 0 004 7.75v-1.5zM1.75 4A2.25 2.25 0 014 1.75V.25A3.75 3.75 0 00.25 4h1.5zM4 1.75A2.25 2.25 0 016.25 4h1.5A3.75 3.75 0 004 .25v1.5zM20.25 17A2.25 2.25 0 0118 19.25v1.5A3.75 3.75 0 0021.75 17h-1.5zM18 19.25A2.25 2.25 0 0115.75 17h-1.5A3.75 3.75 0 0018 20.75v-1.5zM15.75 17A2.25 2.25 0 0118 14.75v-1.5A3.75 3.75 0 0014.25 17h1.5zM18 14.75A2.25 2.25 0 0120.25 17h1.5A3.75 3.75 0 0018 13.25v1.5z" stroke="transparent"/></symbol><symbol viewBox="0 0 19 19" id="ico-phone" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.063 1.262A.895.895 0 012.695 1h4.003c.339 0 .649.191.8.495l1.3 2.702a.895.895 0 01.094.4v.8a.895.895 0 01-.262.633L6.698 8c.501 1.072 2.709 3.48 4.583 4.302l1.97-1.932a.895.895 0 01.633-.262h.8c.14 0 .276.032.4.095l2.421 1.299a.895.895 0 01.495.8v4.003a.895.895 0 01-.262.632l-.8.8a.895.895 0 01-.633.263C7.852 18 1 11.148 1 2.695c0-.237.094-.465.262-.632l.8-.8z" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 19 24" fill="none" id="ico-point" xmlns="http://www.w3.org/2000/svg"><circle cx="9.499" cy="9.499" r="2.833" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 9.886c0 4.908-8.5 12.836-8.5 12.836S1 14.794 1 9.886C1 4.98 4.806 1 9.5 1S18 4.979 18 9.886z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 19 19" id="ico-search" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.894 14.073a7.917 7.917 0 111.179-1.179l4.016 4.017a.834.834 0 01-1.178 1.178l-4.017-4.016zm1.273-6.156a6.25 6.25 0 11-12.5 0 6.25 6.25 0 0112.5 0z" stroke="transparent"/></symbol><symbol viewBox="0 0 20 20" id="ico-signout" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 9.95H19m-4.5 4.95L19 9.95 14.5 5M9 1H3.74c-.69 0-1.03 0-1.31.08-.65.17-1.15.62-1.35 1.2C1 2.54 1 2.85 1 3.47v13.06c0 .62 0 .93.08 1.19.2.58.7 1.03 1.35 1.2.28.08.62.08 1.31.08H9" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol><symbol viewBox="0 0 20 16" id="ico-slider-arrow" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.793 15.207a1 1 0 010-1.414L16.586 9H1a1 1 0 010-2h15.586l-4.793-4.793A1 1 0 0113.207.793l6.5 6.5a1 1 0 010 1.414l-6.5 6.5a1 1 0 01-1.414 0z" stroke="transparent"/></symbol><symbol viewBox="0 0 9 12" fill="none" id="ico-sort-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M1 7l3.5 3.5m0 0L8 7m-3.5 3.5V1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 18 18" fill="none" id="ico-time" xmlns="http://www.w3.org/2000/svg"><circle stroke-width="1.5" cx="9" cy="9" r="8.25"/><path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M9 5v4.5l3 3"/></symbol><symbol viewBox="0 0 19 19" fill="none" id="ico-tooltip" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="9.5" r="9.5" stroke="transparent" fill="#F4F4F8"/><path d="M9.093 10.979l-.285-4.19V3.67h1.382v3.12l-.285 4.19h-.812zM8.68 14v-1.639h1.639V14h-1.64z" stroke="transparent" fill="#94A0B1"/></symbol><symbol viewBox="0 0 26 20" id="ico-truck" xmlns="http://www.w3.org/2000/svg"><path d="M18 14V3a2 2 0 00-2-2H3a2 2 0 00-2 2v11a2 2 0 002 2h1m12 0H9.5M21 16h1.64a2 2 0 001.972-2.329L23.139 6.5a1 1 0 00-.986-.836H18V13.5m-9 3a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm12 0a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" fill="none" stroke-width="1.5"/></symbol><symbol stroke="transparent" viewBox="0 0 20 21" id="ico-upload" xmlns="http://www.w3.org/2000/svg"><path d="M13.8 6.7a1 1 0 101.4-1.4L10.7.8a1 1 0 00-1.4 0L4.8 5.3a1 1 0 001.4 1.4L9 3.92V14.5a1 1 0 102 0V3.91l2.8 2.8z"/><path d="M2 14.5a1 1 0 10-2 0v5a1 1 0 001 1h18a1 1 0 001-1v-5a1 1 0 10-2 0v4H2v-4z"/></symbol><symbol viewBox="0 0 22 22" id="ico-view-grid" xmlns="http://www.w3.org/2000/svg"><rect x=".75" y=".75" width="8.5" height="8.5" rx="1.25" fill="none" stroke-width="1.5"/><rect x="12.75" y=".75" width="8.5" height="8.5" rx="1.25" fill="none" stroke-width="1.5"/><rect x=".75" y="12.75" width="8.5" height="8.5" rx="1.25" fill="none" stroke-width="1.5"/><rect x="12.75" y="12.75" width="8.5" height="8.5" rx="1.25" fill="none" stroke-width="1.5"/></symbol><symbol viewBox="0 0 22 22" id="ico-view-group" xmlns="http://www.w3.org/2000/svg"><rect x=".75" y=".75" width="20.5" height="8.5" rx="1.25" fill="none" stroke-width="1.5"/><rect x=".75" y="12.75" width="20.5" height="8.5" rx="1.25" fill="none" stroke-width="1.5"/></symbol><symbol viewBox="0 0 22 22" id="ico-view-table" xmlns="http://www.w3.org/2000/svg"><rect x=".75" y=".75" width="20.5" height="2.5" rx="1.25" fill="none" stroke-width="1.5"/><rect x=".75" y="6.75" width="20.5" height="2.5" rx="1.25" fill="none" stroke-width="1.5"/><rect x=".75" y="12.75" width="20.5" height="2.5" rx="1.25" fill="none" stroke-width="1.5"/><rect x=".75" y="18.75" width="20.5" height="2.5" rx="1.25" fill="none" stroke-width="1.5"/></symbol><symbol viewBox="0 0 19 11" id="ico-vk" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.174 8.579c-.414-.496-.884-.943-1.338-1.374-.162-.153-.33-.31-.49-.47-.463-.452-.48-.624-.114-1.136.253-.355.522-.71.783-1.054.235-.311.478-.632.712-.956l.048-.067c.447-.619.908-1.258 1.154-2.03.064-.203.13-.502-.022-.752-.154-.252-.45-.329-.66-.362a1.658 1.658 0 00-.304-.022L15.02.354h-.024c-.443 0-.74.209-.91.638-.164.41-.342.846-.547 1.26-.406.827-.923 1.78-1.67 2.575l-.031.033c-.089.096-.188.201-.261.201-.011 0-.024 0-.038-.005-.154-.06-.258-.437-.254-.609V4.44l-.002-3.384c0-.01 0-.023-.002-.034-.075-.55-.24-.892-.862-1.016A.307.307 0 0010.37 0H7.33c-.495 0-.768.203-1.024.504-.07.082-.214.25-.142.453.072.207.307.25.384.265.38.072.595.306.655.712.106.708.12 1.463.042 2.374-.022.255-.065.45-.136.618-.017.04-.075.165-.135.165-.019 0-.073-.006-.173-.074-.236-.161-.408-.393-.61-.678a16.004 16.004 0 01-1.756-3.262C4.25.625 3.906.37 3.464.364A78.032 78.032 0 00.821.366C.466.37.221.477.091.684c-.13.203-.12.472.025.798 1.17 2.603 2.23 4.497 3.44 6.138.846 1.15 1.695 1.946 2.672 2.503 1.029.59 2.182.877 3.525.877.152 0 .31-.005.469-.011.78-.039 1.07-.32 1.106-1.081.018-.39.06-.798.251-1.146.12-.218.233-.218.27-.218a.5.5 0 01.253.093c.17.111.316.259.435.39.113.124.224.248.335.374.24.268.489.547.748.81.567.578 1.192.832 1.91.779h2.681l.017-.002a.777.777 0 00.634-.407c.17-.298.166-.679-.008-1.02a5.428 5.428 0 00-.68-.982z" stroke="transparent"/></symbol><symbol viewBox="0 0 20 15" id="ico-yt" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 1.288C18.5.373 17.166 0 14.62 0H5.38C2.776 0 1.42.397.7 1.37 0 2.32 0 3.72 0 5.656v3.69C0 13.095.832 15 5.38 15h9.24c2.208 0 3.43-.33 4.222-1.136.812-.828 1.158-2.18 1.158-4.519v-3.69c0-2.042-.054-3.449-.78-4.367zm-6.38 6.721l-4.196 2.338a.612.612 0 01-.633-.022.698.698 0 01-.31-.588V5.078c0-.24.117-.463.31-.588a.61.61 0 01.632-.022l4.196 2.322a.695.695 0 01.348.61.695.695 0 01-.347.61z" stroke="transparent"/></symbol><symbol viewBox="0 0 24 24" id="ico-profile" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 20C5 17.5 7 15.6 9.4 15.6H14.5C17 15.6 18.9 17.6 18.9 20" stroke-width="1.4824" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 5.2C16.7 6.9 16.7 9.6 15 11.2C13.3 12.8 10.6 12.9 9.00001 11.2C7.40001 9.5 7.30001 6.8 9.00001 5.2C10.7 3.6 13.3 3.6 15 5.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg></div><!-- Yandex.Metrika counter --><noscript><div><img src="https://mc.yandex.ru/watch/84485338" style="position: absolute; left: -9999px" alt=""></div></noscript><!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript">if (!window.BX) window.BX = {};
+      if (!window.BX.message)
+        window.BX.message = function (mess) {
+          if (typeof mess === "object") {
+            for (let i in mess) {
+              BX.message[i] = mess[i];
+            }
+            return true;
+          }
+        };</script><script type="text/javascript">(window.BX || top.BX).message({
+        JS_CORE_LOADING: "Загрузка...",
+        JS_CORE_NO_DATA: "- Нет данных -",
+        JS_CORE_WINDOW_CLOSE: "Закрыть",
+        JS_CORE_WINDOW_EXPAND: "Развернуть",
+        JS_CORE_WINDOW_NARROW: "Свернуть в окно",
+        JS_CORE_WINDOW_SAVE: "Сохранить",
+        JS_CORE_WINDOW_CANCEL: "Отменить",
+        JS_CORE_WINDOW_CONTINUE: "Продолжить",
+        JS_CORE_H: "ч",
+        JS_CORE_M: "м",
+        JS_CORE_S: "с",
+        JSADM_AI_HIDE_EXTRA: "Скрыть лишние",
+        JSADM_AI_ALL_NOTIF: "Показать все",
+        JSADM_AUTH_REQ: "Требуется авторизация!",
+        JS_CORE_WINDOW_AUTH: "Войти",
+        JS_CORE_IMAGE_FULL: "Полный размер",
+      });</script><script type="text/javascript" src="/bitrix/js/main/core/core.js?1605088855549323"></script><script>BX.setJSList([
+        "/bitrix/js/main/core/core_ajax.js",
+        "/bitrix/js/main/core/core_promise.js",
+        "/bitrix/js/main/polyfill/promise/js/promise.js",
+        "/bitrix/js/main/loadext/loadext.js",
+        "/bitrix/js/main/loadext/extension.js",
+        "/bitrix/js/main/polyfill/promise/js/promise.js",
+        "/bitrix/js/main/polyfill/find/js/find.js",
+        "/bitrix/js/main/polyfill/includes/js/includes.js",
+        "/bitrix/js/main/polyfill/matches/js/matches.js",
+        "/bitrix/js/ui/polyfill/closest/js/closest.js",
+        "/bitrix/js/main/polyfill/fill/main.polyfill.fill.js",
+        "/bitrix/js/main/polyfill/find/js/find.js",
+        "/bitrix/js/main/polyfill/matches/js/matches.js",
+        "/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js",
+        "/bitrix/js/main/core/core.js",
+        "/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js",
+        "/bitrix/js/main/lazyload/dist/lazyload.bundle.js",
+        "/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js",
+        "/bitrix/js/main/parambag/dist/parambag.bundle.js",
+      ]);
+      BX.setCSSList([
+        "/bitrix/js/main/core/css/core.css",
+        "/bitrix/js/main/lazyload/dist/lazyload.bundle.css",
+        "/bitrix/js/main/parambag/dist/parambag.bundle.css",
+      ]);</script><script type="text/javascript">(window.BX || top.BX).message({
+        pull_server_enabled: "N",
+        pull_config_timestamp: "0",
+        pull_guest_mode: "N",
+        pull_guest_user_id: "0",
+      });
+      (window.BX || top.BX).message({
+        PULL_OLD_REVISION: "Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.",
+      });</script><script type="text/javascript">(window.BX || top.BX).message({ AMPM_MODE: false });
+      (window.BX || top.BX).message({
+        MONTH_1: "Январь",
+        MONTH_2: "Февраль",
+        MONTH_3: "Март",
+        MONTH_4: "Апрель",
+        MONTH_5: "Май",
+        MONTH_6: "Июнь",
+        MONTH_7: "Июль",
+        MONTH_8: "Август",
+        MONTH_9: "Сентябрь",
+        MONTH_10: "Октябрь",
+        MONTH_11: "Ноябрь",
+        MONTH_12: "Декабрь",
+        MONTH_1_S: "января",
+        MONTH_2_S: "февраля",
+        MONTH_3_S: "марта",
+        MONTH_4_S: "апреля",
+        MONTH_5_S: "мая",
+        MONTH_6_S: "июня",
+        MONTH_7_S: "июля",
+        MONTH_8_S: "августа",
+        MONTH_9_S: "сентября",
+        MONTH_10_S: "октября",
+        MONTH_11_S: "ноября",
+        MONTH_12_S: "декабря",
+        MON_1: "янв",
+        MON_2: "фев",
+        MON_3: "мар",
+        MON_4: "апр",
+        MON_5: "май",
+        MON_6: "июн",
+        MON_7: "июл",
+        MON_8: "авг",
+        MON_9: "сен",
+        MON_10: "окт",
+        MON_11: "ноя",
+        MON_12: "дек",
+        DAY_OF_WEEK_0: "Воскресенье",
+        DAY_OF_WEEK_1: "Понедельник",
+        DAY_OF_WEEK_2: "Вторник",
+        DAY_OF_WEEK_3: "Среда",
+        DAY_OF_WEEK_4: "Четверг",
+        DAY_OF_WEEK_5: "Пятница",
+        DAY_OF_WEEK_6: "Суббота",
+        DOW_0: "Вс",
+        DOW_1: "Пн",
+        DOW_2: "Вт",
+        DOW_3: "Ср",
+        DOW_4: "Чт",
+        DOW_5: "Пт",
+        DOW_6: "Сб",
+        FD_SECOND_AGO_0: "#VALUE# секунд назад",
+        FD_SECOND_AGO_1: "#VALUE# секунду назад",
+        FD_SECOND_AGO_10_20: "#VALUE# секунд назад",
+        FD_SECOND_AGO_MOD_1: "#VALUE# секунду назад",
+        FD_SECOND_AGO_MOD_2_4: "#VALUE# секунды назад",
+        FD_SECOND_AGO_MOD_OTHER: "#VALUE# секунд назад",
+        FD_SECOND_DIFF_0: "#VALUE# секунд",
+        FD_SECOND_DIFF_1: "#VALUE# секунда",
+        FD_SECOND_DIFF_10_20: "#VALUE# секунд",
+        FD_SECOND_DIFF_MOD_1: "#VALUE# секунда",
+        FD_SECOND_DIFF_MOD_2_4: "#VALUE# секунды",
+        FD_SECOND_DIFF_MOD_OTHER: "#VALUE# секунд",
+        FD_SECOND_SHORT: "#VALUE#с",
+        FD_MINUTE_AGO_0: "#VALUE# минут назад",
+        FD_MINUTE_AGO_1: "#VALUE# минуту назад",
+        FD_MINUTE_AGO_10_20: "#VALUE# минут назад",
+        FD_MINUTE_AGO_MOD_1: "#VALUE# минуту назад",
+        FD_MINUTE_AGO_MOD_2_4: "#VALUE# минуты назад",
+        FD_MINUTE_AGO_MOD_OTHER: "#VALUE# минут назад",
+        FD_MINUTE_DIFF_0: "#VALUE# минут",
+        FD_MINUTE_DIFF_1: "#VALUE# минута",
+        FD_MINUTE_DIFF_10_20: "#VALUE# минут",
+        FD_MINUTE_DIFF_MOD_1: "#VALUE# минута",
+        FD_MINUTE_DIFF_MOD_2_4: "#VALUE# минуты",
+        FD_MINUTE_DIFF_MOD_OTHER: "#VALUE# минут",
+        FD_MINUTE_0: "#VALUE# минут",
+        FD_MINUTE_1: "#VALUE# минуту",
+        FD_MINUTE_10_20: "#VALUE# минут",
+        FD_MINUTE_MOD_1: "#VALUE# минуту",
+        FD_MINUTE_MOD_2_4: "#VALUE# минуты",
+        FD_MINUTE_MOD_OTHER: "#VALUE# минут",
+        FD_MINUTE_SHORT: "#VALUE#мин",
+        FD_HOUR_AGO_0: "#VALUE# часов назад",
+        FD_HOUR_AGO_1: "#VALUE# час назад",
+        FD_HOUR_AGO_10_20: "#VALUE# часов назад",
+        FD_HOUR_AGO_MOD_1: "#VALUE# час назад",
+        FD_HOUR_AGO_MOD_2_4: "#VALUE# часа назад",
+        FD_HOUR_AGO_MOD_OTHER: "#VALUE# часов назад",
+        FD_HOUR_DIFF_0: "#VALUE# часов",
+        FD_HOUR_DIFF_1: "#VALUE# час",
+        FD_HOUR_DIFF_10_20: "#VALUE# часов",
+        FD_HOUR_DIFF_MOD_1: "#VALUE# час",
+        FD_HOUR_DIFF_MOD_2_4: "#VALUE# часа",
+        FD_HOUR_DIFF_MOD_OTHER: "#VALUE# часов",
+        FD_HOUR_SHORT: "#VALUE#ч",
+        FD_YESTERDAY: "вчера",
+        FD_TODAY: "сегодня",
+        FD_TOMORROW: "завтра",
+        FD_DAY_AGO_0: "#VALUE# дней назад",
+        FD_DAY_AGO_1: "#VALUE# день назад",
+        FD_DAY_AGO_10_20: "#VALUE# дней назад",
+        FD_DAY_AGO_MOD_1: "#VALUE# день назад",
+        FD_DAY_AGO_MOD_2_4: "#VALUE# дня назад",
+        FD_DAY_AGO_MOD_OTHER: "#VALUE# дней назад",
+        FD_DAY_DIFF_0: "#VALUE# дней",
+        FD_DAY_DIFF_1: "#VALUE# день",
+        FD_DAY_DIFF_10_20: "#VALUE# дней",
+        FD_DAY_DIFF_MOD_1: "#VALUE# день",
+        FD_DAY_DIFF_MOD_2_4: "#VALUE# дня",
+        FD_DAY_DIFF_MOD_OTHER: "#VALUE# дней",
+        FD_DAY_AT_TIME: "#DAY# в #TIME#",
+        FD_DAY_SHORT: "#VALUE#д",
+        FD_MONTH_AGO_0: "#VALUE# месяцев назад",
+        FD_MONTH_AGO_1: "#VALUE# месяц назад",
+        FD_MONTH_AGO_10_20: "#VALUE# месяцев назад",
+        FD_MONTH_AGO_MOD_1: "#VALUE# месяц назад",
+        FD_MONTH_AGO_MOD_2_4: "#VALUE# месяца назад",
+        FD_MONTH_AGO_MOD_OTHER: "#VALUE# месяцев назад",
+        FD_MONTH_DIFF_0: "#VALUE# месяцев",
+        FD_MONTH_DIFF_1: "#VALUE# месяц",
+        FD_MONTH_DIFF_10_20: "#VALUE# месяцев",
+        FD_MONTH_DIFF_MOD_1: "#VALUE# месяц",
+        FD_MONTH_DIFF_MOD_2_4: "#VALUE# месяца",
+        FD_MONTH_DIFF_MOD_OTHER: "#VALUE# месяцев",
+        FD_MONTH_SHORT: "#VALUE#мес",
+        FD_YEARS_AGO_0: "#VALUE# лет назад",
+        FD_YEARS_AGO_1: "#VALUE# год назад",
+        FD_YEARS_AGO_10_20: "#VALUE# лет назад",
+        FD_YEARS_AGO_MOD_1: "#VALUE# год назад",
+        FD_YEARS_AGO_MOD_2_4: "#VALUE# года назад",
+        FD_YEARS_AGO_MOD_OTHER: "#VALUE# лет назад",
+        FD_YEARS_DIFF_0: "#VALUE# лет",
+        FD_YEARS_DIFF_1: "#VALUE# год",
+        FD_YEARS_DIFF_10_20: "#VALUE# лет",
+        FD_YEARS_DIFF_MOD_1: "#VALUE# год",
+        FD_YEARS_DIFF_MOD_2_4: "#VALUE# года",
+        FD_YEARS_DIFF_MOD_OTHER: "#VALUE# лет",
+        FD_YEARS_SHORT_0: "#VALUE#л",
+        FD_YEARS_SHORT_1: "#VALUE#г",
+        FD_YEARS_SHORT_10_20: "#VALUE#л",
+        FD_YEARS_SHORT_MOD_1: "#VALUE#г",
+        FD_YEARS_SHORT_MOD_2_4: "#VALUE#г",
+        FD_YEARS_SHORT_MOD_OTHER: "#VALUE#л",
+        CAL_BUTTON: "Выбрать",
+        CAL_TIME_SET: "Установить время",
+        CAL_TIME: "Время",
+        FD_LAST_SEEN_TOMORROW: "завтра в #TIME#",
+        FD_LAST_SEEN_NOW: "только что",
+        FD_LAST_SEEN_TODAY: "сегодня в #TIME#",
+        FD_LAST_SEEN_YESTERDAY: "вчера в #TIME#",
+        FD_LAST_SEEN_MORE_YEAR: "более года назад",
+      });</script><script type="text/javascript">(window.BX || top.BX).message({ WEEK_START: "1" });</script><script type="text/javascript">(window.BX || top.BX).message({
+        ADMIN_INCLAREA_DBLCLICK: "Двойной щелчок",
+        ADMIN_SHOW_MODE_ON: "включен",
+        ADMIN_SHOW_MODE_OFF: "выключен",
+        AMDIN_SHOW_MODE_TITLE: "Режим правки",
+        ADMIN_SHOW_MODE_ON_HINT:
+          "Режим правки включен. На странице доступны элементы управления компонентами и включаемыми областями.",
+        ADMIN_SHOW_MODE_OFF_HINT: "Режим правки выключен",
+      });</script><script type="text/javascript">(window.BX || top.BX).message({
+        LANGUAGE_ID: "ru",
+        FORMAT_DATE: "DD.MM.YYYY",
+        FORMAT_DATETIME: "DD.MM.YYYY HH:MI:SS",
+        COOKIE_PREFIX: "BITRIX_SM",
+        SERVER_TZ_OFFSET: "10800",
+        SITE_ID: "s1",
+        SITE_DIR: "/",
+        USER_ID: "32",
+        SERVER_TIME: "1667382302",
+        USER_TZ_OFFSET: "0",
+        USER_TZ_AUTO: "Y",
+        bitrix_sessid: "990042299c10c98b7dbb057a8ddd26ea",
+      });</script><script type="text/javascript" src="/bitrix/js/main/core/core_ls.js?160508885510430"></script><script type="text/javascript" src="/bitrix/js/main/session.js?16050888553250"></script><script type="text/javascript" src="/bitrix/js/main/popup/dist/main.popup.bundle.js?1606459525104794"></script><script type="text/javascript" src="/bitrix/js/main/pageobject/pageobject.js?1605088855864"></script><script type="text/javascript" src="/bitrix/js/main/core/core_window.js?160508885598321"></script><script type="text/javascript" src="/bitrix/js/pull/protobuf/protobuf.js?1605088871274055"></script><script type="text/javascript" src="/bitrix/js/pull/protobuf/model.js?160508887170928"></script><script type="text/javascript" src="/bitrix/js/rest/client/rest.client.js?160524358817414"></script><script type="text/javascript" src="/bitrix/js/pull/client/pull.client.js?160508887166315"></script><script type="text/javascript" src="/bitrix/js/main/date/main.date.js?160508885534530"></script><script type="text/javascript" src="/bitrix/js/main/core/core_date.js?160645952735062"></script><script type="text/javascript" src="/bitrix/js/fileman/sticker.js?160508886170699"></script><script type="text/javascript" src="/bitrix/js/main/core/core_admin.js?160508885528623"></script><script type="text/javascript" src="/bitrix/js/main/utils.js?160508885530973"></script><script type="text/javascript" src="/bitrix/js/main/hot_keys.js?160508885517302"></script><script type="text/javascript" src="/bitrix/js/main/admin_tools.js?160508885567959"></script><script type="text/javascript" src="/bitrix/js/main/popup_menu.js?160508885512913"></script><script type="text/javascript" src="/bitrix/js/main/admin_search.js?16050888557230"></script><script type="text/javascript" src="/bitrix/js/main/public_tools.js?160508885532738"></script><script type="text/javascript">BX.setCSSList([
+        "/bitrix/js/main/core/css/core_date.css",
+        "/local/components/sebekon/sale.personal.order.list/templates/.default/style.css",
+        "/local/templates/general//daichi-layout/build/css/font/font.css",
+        "/local/templates/general//daichi-layout/build/libs/fancybox/jquery.fancybox.min.css",
+        "/local/templates/general//daichi-layout/build/libs/slick/slick.css",
+        "/local/templates/general//daichi-layout/build/libs/daterange/daterangepicker.css",
+        "/local/templates/general//daichi-layout/build/libs/simplebar/simplebar.css",
+        "/local/templates/general//daichi-layout/build/libs/select2/css/select2.min.css",
+        "/local/templates/general//daichi-layout/build/css/template_styles.css",
+        "/local/templates/general//additional.css",
+        "/local/templates/general//business_club/css/style.css",
+        "/local/templates/general//bonus-assets/css/style.css",
+      ]);</script><script type="text/javascript">bxSession.Expand(
+        "990042299c10c98b7dbb057a8ddd26ea.d8f71185a23fb174ed8413051646bc68007c5df863f6dae907a091be0d298bc5"
+      );</script><script type="text/javascript">(function () {
+        "use strict";
+
+        var counter = function () {
+          var cookie = (function (name) {
+            var parts = ("; " + document.cookie).split("; " + name + "=");
+            if (parts.length == 2) {
+              try {
+                return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));
+              } catch (e) {}
+            }
+          })("BITRIX_CONVERSION_CONTEXT_s1");
+
+          if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME")) return;
+
+          var request = new XMLHttpRequest();
+          request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+          request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          request.send(
+            "SITE_ID=" +
+              encodeURIComponent("s1") +
+              "&sessid=" +
+              encodeURIComponent(BX.bitrix_sessid()) +
+              "&HTTP_REFERER=" +
+              encodeURIComponent(document.referrer)
+          );
+        };
+
+        if (window.frameRequestStart === true) BX.addCustomEvent("onFrameDataReceived", counter);
+        else BX.ready(counter);
+      })();</script><script type="text/javascript">BX.bind(window, "load", function () {
+        BX.PULL.start();
+      });</script><script type="text/javascript">var phpVars = {
+        ADMIN_THEME_ID: ".default",
+        LANGUAGE_ID: "ru",
+        FORMAT_DATE: "DD.MM.YYYY",
+        FORMAT_DATETIME: "DD.MM.YYYY HH:MI:SS",
+        opt_context_ctrl: false,
+        cookiePrefix: "BITRIX_SM",
+        titlePrefix: "Даичи - ",
+        bitrix_sessid: "990042299c10c98b7dbb057a8ddd26ea",
+        messHideMenu: "Скрыть меню",
+        messShowMenu: "Показать меню",
+        messHideButtons: "Уменьшить кнопки",
+        messShowButtons: "Увеличить кнопки",
+        messFilterInactive: "Поиск не используется - показаны все записи",
+        messFilterActive: "Используется поиск - показаны только найденные записи",
+        messFilterLess: "Скрыть условие поиска",
+        messLoading: "Загрузка...",
+        messMenuLoading: "Загрузка...",
+        messMenuLoadingTitle: "Загружаются пункты меню...",
+        messNoData: "- Нет данных -",
+        messExpandTabs: "Развернуть все вкладки на одну страницу",
+        messCollapseTabs: "Свернуть вкладки",
+        messPanelFixOn: "Зафиксировать панель на экране",
+        messPanelFixOff: "Открепить панель",
+        messPanelCollapse: "Скрыть панель",
+        messPanelExpand: "Показать панель",
+      };</script><script type="text/javascript" src="/local/js/jquery-3.4.1.min.js?160795867888147"></script><script type="text/javascript" src="/local/js/classes/sebekon/skUtil.js?16324031441541"></script><script type="text/javascript" src="/local/js/classes/sebekon/CFavorites.js?16234121462307"></script><script type="text/javascript" src="/local/js/classes/sebekon/CAlertsBasket.js?1617190575695"></script><script type="text/javascript" src="/local/js/classes/sebekon/CQntSelector.js?16533980319995"></script><script type="text/javascript" src="/local/js/classes/sebekon/CPriceNotFoundHandler.js?1617190575537"></script><script type="text/javascript" src="/local/js/classes/sebekon/CCitySelector.js?16215822974526"></script><script type="text/javascript" src="/local/js/classes/sebekon/CPopup.js?16321456243981"></script><script type="text/javascript" src="/local/js/classes/sebekon/CSmallBasket.js?1617190575201"></script><script type="text/javascript" src="/local/js/vendor/mustache.js?161719057519670"></script><script type="text/javascript" src="/local/js/application.js?16324031441290"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/fancybox/jquery.fancybox.min.js?164009478068253"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/mask/jquery.mask.min.js?16400947808327"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/slick/slick.min.js?164009478042863"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/daterange/moment.min.js?164009478053324"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/daterange/daterangepicker.js?164009478066305"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/popper/popper.min.js?164009478018053"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/popper/popper-init.js?16400947809146"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/simplebar/simplebar.js?164009478058047"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/jqui/jquery-ui.min.js?164009478036675"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/jqui/datepicker-ru.js?16400947801553"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/select2/js/select2.min.js?164009478073170"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/libs/select2/js/select2.init.js?16400947803647"></script><script type="text/javascript" src="/local/templates/general//daichi-layout/build/js/temp.js?166729905627783"></script><script type="text/javascript" src="/local/js/application_init.js?161858039470"></script><script type="text/javascript" src="/local/templates/general//bonus-assets/js/main.min.js?16647969622095005"></script><script type="text/javascript" src="/local/templates/general//business_club/js/main.min.js?16643869791350652"></script><script type="text/javascript" src="/local/templates/.default/components/bitrix/search.form/header-search/script.js?16292784651730"></script><script type="text/javascript" src="/local/templates/.default/components/bitrix/sale.basket.basket.line/.default/script.js?16171905755335"></script><script type="text/javascript" src="/local/templates/.default/components/bitrix/search.form/header-search-mobile/script.js?1629278465417"></script><script type="text/javascript" src="/local/components/sebekon/sale.personal.order.filter/templates/.default/script.js?16444965015015"></script><script type="text/javascript" src="/local/templates/.default/components/bitrix/system.pagenavigation/.default/script.js?16215822973678"></script><script type="text/javascript" src="/local/components/sebekon/sale.personal.order.list/templates/.default/script.js?1622017777910"></script><script type="text/javascript" src="/local/templates/.default/components/bitrix/system.pagenavigation/orders-show-more/script.js?16438021302119"></script><script type="text/javascript" src="/local/js/classes/sebekon/COrderRepeat.js?16438021303112"></script><script type="text/javascript">var _ba = _ba || [];
+      _ba.push(["aid", "6ea42ae4b8135755d8d475bbad4cedce"]);
+      _ba.push(["host", "demo.daichi.business"]);
+      (function () {
+        var ba = document.createElement("script");
+        ba.type = "text/javascript";
+        ba.async = true;
+        ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ba, s);
+      })();</script><script>const CAPCHA_PUBLIC_KEY = "6LdXZCEaAAAAAFjDf65OOpet2UPrWoUq4_AiMuKr";
+      let showRecaptureIcon = false;</script><script type="text/javascript">BX.admin.dynamic_mode = false;
+      BX.admin.dynamic_mode_show_borders = false;</script><script type="text/javascript">BX.message({ MENU_ENABLE_TOOLTIP: true });
+      new BX.COpener({
+        DIV: "bx-panel-menu",
+        ACTIVE_CLASS: "bx-pressed",
+        MENU_URL:
+          "/bitrix/admin/get_start_menu.php?lang=ru&back_url_pub=%2Fpersonal%2Forder%2F&sessid=990042299c10c98b7dbb057a8ddd26ea",
+        MENU_PRELOAD: false,
+      });</script><script type="text/javascript">BXHotKeys.Add("", 'var d=BX("bx-panel-menu"); if (d) d.click();', 91, "Меню", 0);</script><script type="text/javascript">BXHotKeys.Add("", "var d=BX('bx-panel-admin-tab'); if (d) location.href = d.href;", 92, "Администрирование", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "Ctrl+Alt+79",
+        "var d=BX('bx-panel-logout'); if (d) location.href = d.href;",
+        133,
+        "Выход пользователя из системы.",
+        151
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "Ctrl+Alt+68",
+        'location.href="/personal/order/?bitrix_include_areas=Y";',
+        117,
+        "Режим правки",
+        148
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "Ctrl+Alt+69",
+        "var d=BX('bx-panel-expander'); if (d) BX.fireEvent(d, 'click');",
+        118,
+        "Развернуть/Свернуть",
+        153
+      );</script><script type="text/javascript">BXHotKeys.Add("", "", 111, "<b>Создать страницу</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?lang=ru&site=s1&templateID=general&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+        60,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Создать страницу",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/bitrix/admin/workflow_edit.php?lang=ru&site=s1&fname=/personal/order/untitled.php&template=standart.php&return_url=%2Fpersonal%2Forder%2F')",
+        108,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Через документооборот",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_create",
+        TYPE: "BIG",
+        ACTIVE_CSS: "bx-panel-button-icon-active",
+        HOVER_CSS: "bx-panel-button-icon-hover",
+        HINT: { TITLE: "Создать страницу", TEXT: "Создание страниц с помощью мастера." },
+        GROUP_ID: 0,
+        SKIP: true,
+      });
+      BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_create_menu",
+        TYPE: "BIG",
+        MENU: [
+          {
+            TEXT: "Создать страницу",
+            TITLE: "Мастер создания новой страницы",
+            ICON: "panel-new-file",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?lang=ru&site=s1&templateID=general&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+            DEFAULT: true,
+            SORT: "10",
+            HK_ID: "top_panel_create_page",
+          },
+          { SEPARATOR: true, SORT: "49" },
+          {
+            SRC: "/bitrix/images/workflow/new_page.gif",
+            TEXT: "Через документооборот",
+            TITLE: "Создать новую страницу в текущем разделе через документооборот",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/workflow_edit.php?lang=ru&site=s1&fname=/personal/order/untitled.php&template=standart.php&return_url=%2Fpersonal%2Forder%2F')",
+            HK_ID: "FLOW_PANEL_CREATE_WITH_WF",
+            SORT: "50",
+          },
+          { SEPARATOR: true, SORT: "99" },
+          {
+            TEXT: "В панели управления",
+            TITLE: "Создать новую страницу",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/fileman_file_edit.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F&new=Y&templateID=general&back_url=%2Fpersonal%2Forder%2F')",
+            SORT: "100",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-button-text-active",
+        HOVER_CSS: "bx-panel-button-text-hover",
+        HINT: {
+          TITLE: "Создать страницу",
+          TEXT: "Нажмите на эту кнопку, чтобы запустить мастер или шаблон создания страниц или включаемых областей для страниц. С помощью этих мастеров, можно создать страницу или включаемую область, последовательно внося данные на каждом шаге мастера.",
+        },
+        GROUP_ID: 0,
+        TEXT: "Создать страницу",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 112, "<b>Создать раздел</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?lang=ru&site=s1&templateID=general&newFolder=Y&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+        62,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Создать раздел",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_create_section",
+        TYPE: "BIG",
+        ACTIVE_CSS: "bx-panel-button-icon-active",
+        HOVER_CSS: "bx-panel-button-icon-hover",
+        HINT: { TITLE: "Создать раздел", TEXT: "Создание разделов с помощью мастера." },
+        GROUP_ID: 0,
+        SKIP: true,
+      });
+      BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_create_section_menu",
+        TYPE: "BIG",
+        MENU: [
+          {
+            TEXT: "Создать раздел",
+            TITLE: "Мастер создания нового раздела",
+            ICON: "panel-new-folder",
+            DEFAULT: true,
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?lang=ru&site=s1&templateID=general&newFolder=Y&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+            SORT: "10",
+            HK_ID: "top_panel_create_folder",
+          },
+          {
+            TEXT: "По шаблону",
+            TITLE: "Мастер создания нового раздела с индексной страницей по шаблону",
+            ICON: "panel-new-folder-template",
+            MENU: [
+              {
+                TEXT: "Форум (ЧПУ)",
+                TITLE: "Шаблон forum\nСтраница с форумами в режиме ЧПУ",
+                ICON: "",
+                IMAGE: "/bitrix/themes/.default/start_menu/forum/forum.gif",
+                ACTION:
+                  "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?newFolder=Y&wiz_template=forum&lang=ru&site=s1&templateID=general&newFolder=Y&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+              },
+              { SEPARATOR: true },
+              {
+                TEXT: "Стандартная страница",
+                TITLE: "Шаблон standard.php",
+                ICON: "panel-new-file-template",
+                ACTION:
+                  "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_new.php?newFolder=Y&page_template=standard.php&lang=ru&site=s1&templateID=general&newFolder=Y&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+              },
+            ],
+            SORT: "20",
+          },
+          { SEPARATOR: true, SORT: "99" },
+          {
+            TEXT: "В панели управления",
+            TITLE: "Создать новый раздел",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/fileman_newfolder.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F')",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-button-text-active",
+        HOVER_CSS: "bx-panel-button-text-hover",
+        HINT: {
+          TITLE: "Создать раздел",
+          TEXT: "Нажмите на эту кнопку, чтобы запустить мастер или шаблон создания разделов или включаемых областей для разделов. С помощью этих мастеров, можно создать страницу или включаемую область, последовательно внося данные на каждом шаге мастера.",
+        },
+        GROUP_ID: 0,
+        TEXT: "Создать раздел",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 107, "<b>Изменить страницу</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CEditorDialog({'content_url':'/bitrix/admin/public_file_edit.php?lang=ru&path=%2Fpersonal%2Forder%2Findex.php&site=s1&back_url=%2Fpersonal%2Forder%2F&templateID=general&siteTemplateId=general','width':'780','height':'470','min_width':'780','min_height':'400'})).Show()",
+        63,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В визуальном редакторе",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_property.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2Findex.php&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+        64,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Заголовок и свойства страницы",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CEditorDialog({'content_url':'/bitrix/admin/public_file_edit.php?lang=ru&noeditor=Y&path=%2Fpersonal%2Forder%2Findex.php&site=s1&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'780','height':'470','min_width':'700','min_height':'400'})).Show()",
+        65,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В режиме HTML-кода",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CEditorDialog({'content_url':'/bitrix/admin/public_file_edit_src.php?lang=ru&path=%2Fpersonal%2Forder%2Findex.php&site=s1&back_url=%2Fpersonal%2Forder%2F&templateID=general&siteTemplateId=general','width':'770','height':'470','min_width':'700','min_height':'400'})).Show()",
+        67,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В режиме PHP-кода",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_delete.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2Findex.php&siteTemplateId=general','width':'440','height':'180','min_width':'250','min_height':'180'})).Show()",
+        68,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Удалить страницу",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/bitrix/admin/workflow_edit.php?lang=ru&site=s1&fname=/personal/order/index.php&return_url=%2Fpersonal%2Forder%2F')",
+        109,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Через документооборот",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/bitrix/admin/workflow_history_list.php?lang=ru&find_filename=%2Fpersonal%2Forder%2Findex.php&find_filename_exact_match=Y&set_filter=Y')",
+        110,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;История изменений страницы",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_edit",
+        TYPE: "BIG",
+        ACTIVE_CSS: "bx-panel-button-icon-active",
+        HOVER_CSS: "bx-panel-button-icon-hover",
+        HINT: { TITLE: "Изменить страницу", TEXT: "Изменение содержимого страницы." },
+        GROUP_ID: 1,
+        SKIP: true,
+      });
+      BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_edit_menu",
+        TYPE: "BIG",
+        MENU: [
+          {
+            TEXT: "В визуальном редакторе",
+            TITLE: "Редактировать страницу в визуальном редакторе",
+            ICON: "panel-edit-visual",
+            ACTION:
+              "(new BX.CEditorDialog({'content_url':'/bitrix/admin/public_file_edit.php?lang=ru&path=%2Fpersonal%2Forder%2Findex.php&site=s1&back_url=%2Fpersonal%2Forder%2F&templateID=general&siteTemplateId=general','width':'780','height':'470','min_width':'780','min_height':'400'})).Show()",
+            DEFAULT: true,
+            SORT: "10",
+            HK_ID: "top_panel_edit_page",
+          },
+          {
+            TEXT: "Заголовок и свойства страницы",
+            TITLE: "Изменить заголовок и другие свойства страницы",
+            ICON: "panel-file-props",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_property.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2Findex.php&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+            SORT: "20",
+            HK_ID: "top_panel_page_prop",
+          },
+          { SEPARATOR: true, SORT: "29" },
+          {
+            TEXT: "Доступ к странице",
+            TITLE: "Установить права доступа к странице",
+            ICON: "panel-file-access",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_access_edit.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2Findex.php&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+            SORT: "30",
+            HK_ID: "top_panel_access_page_new",
+          },
+          {
+            ID: "delete",
+            ICON: "icon-delete",
+            ALT: "Удалить страницу",
+            TEXT: "Удалить страницу",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_file_delete.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2Findex.php&siteTemplateId=general','width':'440','height':'180','min_width':'250','min_height':'180'})).Show()",
+            SORT: "40",
+            HK_ID: "top_panel_del_page",
+          },
+          { SEPARATOR: true, SORT: "49" },
+          {
+            TEXT: "В режиме HTML-кода",
+            TITLE: "Редактировать страницу в режиме HTML",
+            ICON: "panel-edit-text",
+            ACTION:
+              "(new BX.CEditorDialog({'content_url':'/bitrix/admin/public_file_edit.php?lang=ru&noeditor=Y&path=%2Fpersonal%2Forder%2Findex.php&site=s1&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'780','height':'470','min_width':'700','min_height':'400'})).Show()",
+            SORT: "50",
+            HK_ID: "top_panel_edit_page_html",
+          },
+          {
+            TEXT: "В режиме PHP-кода",
+            TITLE: "Редактировать полный PHP-код страницы",
+            ICON: "panel-edit-php",
+            ACTION:
+              "(new BX.CEditorDialog({'content_url':'/bitrix/admin/public_file_edit_src.php?lang=ru&path=%2Fpersonal%2Forder%2Findex.php&site=s1&back_url=%2Fpersonal%2Forder%2F&templateID=general&siteTemplateId=general','width':'770','height':'470','min_width':'700','min_height':'400'})).Show()",
+            SORT: "60",
+            HK_ID: "top_panel_edit_page_php",
+          },
+          { SEPARATOR: true, SORT: "79" },
+          {
+            SRC: "/bitrix/images/workflow/edit_flow_public.gif",
+            TEXT: "Через документооборот",
+            TITLE: "Редактирование текущей страницы через документооборот",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/workflow_edit.php?lang=ru&site=s1&fname=/personal/order/index.php&return_url=%2Fpersonal%2Forder%2F')",
+            HK_ID: "FLOW_PANEL_EDIT_WITH_WF",
+            SORT: "80",
+          },
+          {
+            SRC: "/bitrix/images/workflow/history.gif",
+            TEXT: "История изменений страницы",
+            TITLE: "История изменений текущей страницы",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/workflow_history_list.php?lang=ru&find_filename=%2Fpersonal%2Forder%2Findex.php&find_filename_exact_match=Y&set_filter=Y')",
+            HK_ID: "FLOW_PANEL_HISTORY",
+            SORT: "81",
+          },
+          { SEPARATOR: true, SORT: "99" },
+          {
+            TEXT: "В панели управления",
+            TITLE: "Редактировать текущую страницу",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/fileman_file_edit.php?lang=ru&site=s1&templateID=general&path=%2Fpersonal%2Forder%2Findex.php&back_url=%2Fpersonal%2Forder%2F')",
+            SORT: "100",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-button-text-active",
+        HOVER_CSS: "bx-panel-button-text-hover",
+        HINT: {
+          TITLE: "Изменить страницу",
+          TEXT: "Нажмите на эту кнопку, чтобы вызвать диалог редактирования страницы, в том числе через документооборот, просмотреть историю изменений страницы, изменить свойства страницы, ограничить доступ к ней.",
+        },
+        GROUP_ID: 1,
+        TEXT: "Изменить страницу",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 96, "<b>Изменить раздел</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "javascript:(new BX.CDialog({'content_url':'/bitrix/admin/public_folder_edit.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+        69,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Свойства раздела",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "(new BX.CDialog({'content_url':'/bitrix/admin/public_access_edit.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+        70,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Доступ к разделу",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_edit_section",
+        TYPE: "BIG",
+        ACTIVE_CSS: "bx-panel-button-icon-active",
+        HOVER_CSS: "bx-panel-button-icon-hover",
+        HINT: { TITLE: "Изменить раздел", TEXT: "Изменение свойств раздела." },
+        GROUP_ID: 1,
+        SKIP: true,
+      });
+      BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_edit_section_menu",
+        TYPE: "BIG",
+        MENU: [
+          {
+            TEXT: "Свойства раздела",
+            TITLE: "Изменить название и другие свойства раздела",
+            ICON: "panel-folder-props",
+            DEFAULT: true,
+            ACTION:
+              "javascript:(new BX.CDialog({'content_url':'/bitrix/admin/public_folder_edit.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+            SORT: "10",
+            HK_ID: "top_panel_folder_prop",
+          },
+          {
+            TEXT: "Доступ к разделу",
+            TITLE: "Установить права доступа к разделу",
+            ICON: "panel-folder-access",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_access_edit.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'','height':'','min_width':'450','min_height':'250'})).Show()",
+            SORT: "30",
+            HK_ID: "top_panel_access_folder_new",
+          },
+          { SEPARATOR: true, SORT: "99" },
+          {
+            TEXT: "В панели управления",
+            TITLE: "Редактировать свойства раздела",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/fileman_folder.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F&back_url=%2Fpersonal%2Forder%2F')",
+            SORT: "100",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-button-text-active",
+        HOVER_CSS: "bx-panel-button-text-hover",
+        HINT: {
+          TITLE: "Изменить раздел",
+          TEXT: "Нажмите на эту кнопку, чтобы изменить свойства раздела и ограничить доступ к нему.",
+        },
+        GROUP_ID: 1,
+        TEXT: "Изменить раздел",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_menus",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: 'Редактировать "catalog_spec"',
+            TITLE: 'Редактировать пункты меню "catalog_spec"',
+            SORT: "100",
+            ICON: "menu-edit",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2F&name=catalog_spec&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Редактировать "personal"',
+            TITLE: 'Редактировать пункты меню "personal"',
+            SORT: "100",
+            ICON: "menu-edit",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2F&name=personal&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Редактировать "Верхнее меню"',
+            TITLE: 'Редактировать пункты меню "Верхнее меню"',
+            SORT: "100",
+            ICON: "menu-edit",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2F&name=top&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Редактировать "Меню каталога"',
+            TITLE: 'Редактировать пункты меню "Меню каталога"',
+            SORT: "100",
+            ICON: "menu-edit",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2F&name=catalog&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Редактировать "Ссылки на соц. сети"',
+            TITLE: 'Редактировать пункты меню "Ссылки на соц. сети"',
+            SORT: "100",
+            ICON: "menu-edit",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2F&name=social&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          { SEPARATOR: "Y", SORT: "150" },
+          {
+            TEXT: 'Создать "catalog_spec"',
+            TITLE: 'Создать меню "catalog_spec" в текущем разделе',
+            SORT: "200",
+            ICON: "menu-add",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?new=Y&lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2Fpersonal%2Forder&name=catalog_spec&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Создать "personal"',
+            TITLE: 'Создать меню "personal" в текущем разделе',
+            SORT: "200",
+            ICON: "menu-add",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?new=Y&lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2Fpersonal%2Forder&name=personal&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Создать "Верхнее меню"',
+            TITLE: 'Создать меню "Верхнее меню" в текущем разделе',
+            SORT: "200",
+            ICON: "menu-add",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?new=Y&lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2Fpersonal%2Forder&name=top&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Создать "Меню каталога"',
+            TITLE: 'Создать меню "Меню каталога" в текущем разделе',
+            SORT: "200",
+            ICON: "menu-add",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?new=Y&lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2Fpersonal%2Forder&name=catalog&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+          {
+            TEXT: 'Создать "Ссылки на соц. сети"',
+            TITLE: 'Создать меню "Ссылки на соц. сети" в текущем разделе',
+            SORT: "200",
+            ICON: "menu-add",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_menu_edit.php?new=Y&lang=ru&site=s1&back_url=%2Fpersonal%2Forder%2F&path=%2Fpersonal%2Forder&name=social&siteTemplateId=general','width':'','height':''})).Show()",
+            DEFAULT: false,
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-active",
+        HOVER_CSS: "bx-panel-small-button-hover",
+        HINT: {
+          TITLE: "Меню",
+          TEXT: "Вызов формы редактирования меню. Нажмите на стрелку, чтобы отредактировать все меню данной страницы или создать новое меню.",
+          TARGET: "parent",
+        },
+        GROUP_ID: 2,
+        TEXT: "Меню",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 97, "<b>Структура</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/bitrix/admin/fileman_admin.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F')",
+        71,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В панели управления",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_structure",
+        TYPE: "SMALL",
+        ACTIVE_CSS: "bx-panel-small-button-text-active",
+        HOVER_CSS: "bx-panel-small-button-text-hover",
+        HINT: {
+          TITLE: "Структура",
+          TEXT: "Вызов диалога Структура сайта с возможностью добавления, редактирования, перемещения, удаления, изменения свойств разделов и страниц.",
+          TARGET: "parent",
+        },
+        GROUP_ID: 2,
+        SKIP: true,
+        LINK: "javascript:void(0)",
+        ACTION:
+          "(new BX.CDialog({'content_url':'/bitrix/admin/public_structure.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2Findex.php&templateID=general&siteTemplateId=general','width':'350','height':'470'})).Show()",
+        TEXT: "Структура",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_structure_menu",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: "Управление структурой",
+            TITLE: "Управление структурой сайта",
+            ACTION:
+              "(new BX.CDialog({'content_url':'/bitrix/admin/public_structure.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2Findex.php&templateID=general&siteTemplateId=general','width':'350','height':'470'})).Show()",
+            DEFAULT: true,
+            HK_ID: "main_top_panel_struct",
+          },
+          { SEPARATOR: true },
+          {
+            TEXT: "В панели управления",
+            TITLE: "Перейти в управление структурой в административном разделе",
+            ACTION:
+              "jsUtils.Redirect([], '/bitrix/admin/fileman_admin.php?lang=ru&site=s1&path=%2Fpersonal%2Forder%2F')",
+            HK_ID: "main_top_panel_struct_panel",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-arrow-active",
+        HOVER_CSS: "bx-panel-small-button-arrow-hover",
+        GROUP_ID: 2,
+        TEXT: "Структура",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_seo",
+        TYPE: "SMALL",
+        ACTIVE_CSS: "bx-panel-small-button-active",
+        HOVER_CSS: "bx-panel-small-button-hover",
+        HINT: {
+          TITLE: "SEO",
+          TEXT: "Вызов инструментов оптимизации сайта с целью повышения положения сайта в выдаче поисковых машин.",
+        },
+        GROUP_ID: 2,
+        SKIP: false,
+        LINK: "javascript:void(0)",
+        ACTION:
+          "(new BX.CAdminDialog({'content_url':'/bitrix/admin/public_seo_tools.php?lang=ru&bxpublic=Y&from_module=seo&site=s1&path=%2Fpersonal%2Forder%2Findex.php&title_final=0JzQvtC4INC30LDQutCw0LfRiw%3D%3D&title_changer_name=bitrix%3Asale.personal.order&title_changer_link=&title_win_final=&title_win_changer_name=&title_win_changer_link=&sessid=990042299c10c98b7dbb057a8ddd26ea&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'920','height':'400'})).Show()",
+        TEXT: "SEO",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 98, "<b>Сбросить кеш</b>", 0);</script><script type="text/javascript">BXHotKeys.Add("", "BX.clearCache()", 72, "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Обновить кеш страницы", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/personal/order/?clear_cache_session=Y');",
+        74,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Не использовать кеш",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_0",
+        TYPE: "BIG",
+        ACTIVE_CSS: "bx-panel-button-icon-active",
+        HOVER_CSS: "bx-panel-button-icon-hover",
+        HINT: { TITLE: "Сбросить кеш", TEXT: "Обновление кеша страницы." },
+        GROUP_ID: 3,
+        SKIP: true,
+      });
+      BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_0_menu",
+        TYPE: "BIG",
+        MENU: [
+          {
+            TEXT: "Обновить кеш страницы",
+            TITLE: "Обновить закешированные данные текущей страницы",
+            ICON: "panel-page-cache",
+            ACTION: "BX.clearCache()",
+            DEFAULT: true,
+            HK_ID: "top_panel_cache_page",
+          },
+          { SEPARATOR: true },
+          {
+            TEXT: "Не использовать кеш",
+            TITLE: "Отключить кеширование для текущего сеанса пользователя",
+            CHECKED: false,
+            ACTION: "jsUtils.Redirect([], '/personal/order/?clear_cache_session=Y');",
+            HK_ID: "top_panel_cache_not",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-button-text-active",
+        HOVER_CSS: "bx-panel-button-text-hover",
+        HINT: {
+          TITLE: "Сбросить кеш",
+          TEXT: "Нажмите на эту кнопку, чтобы обновить кеш страницы или компонентов, или отключить кеш для данной страницы вообще.",
+        },
+        GROUP_ID: 3,
+        TEXT: "Сбросить кеш",
+      });</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], BX('bx-panel-toggle').href);",
+        75,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Перейти в режим правки",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_components",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: "Перейти в режим правки",
+            TITLE: "Перейдите в режим правки для отображения списка компонентов",
+            ACTION: "jsUtils.Redirect([], BX('bx-panel-toggle').href);",
+            HK_ID: "top_panel_edit_mode",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-active",
+        HOVER_CSS: "bx-panel-small-button-hover",
+        HINT: { TITLE: "Компоненты", TEXT: "Выбор компонента для редактирования его параметров.", TARGET: "parent" },
+        GROUP_ID: 4,
+        TEXT: "Компоненты",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 99, "<b>Шаблон сайта</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/bitrix/admin/site_edit.php?lang=ru&LID=s1')",
+        78,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Редактировать сайт",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_1",
+        TYPE: "SMALL",
+        ACTIVE_CSS: "bx-panel-small-button-text-active",
+        HOVER_CSS: "bx-panel-small-button-text-hover",
+        HINT: {
+          TITLE: "Шаблон сайта",
+          TEXT: "Вызов форм редактирования стилей сайта и стилей шаблона.",
+          TARGET: "parent",
+        },
+        GROUP_ID: 4,
+        SKIP: true,
+        LINK: "javascript:void(0)",
+        ACTION: "jsUtils.Redirect([], '/bitrix/admin/template_edit.php?lang=ru&ID=general')",
+        TEXT: "Шаблон сайта",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_1_menu",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: "Редактировать шаблон",
+            TITLE: "Редактировать шаблон сайта в панели управления",
+            ICON: "icon-edit",
+            ACTION: "jsUtils.Redirect([], '/bitrix/admin/template_edit.php?lang=ru&ID=general')",
+            DEFAULT: true,
+            HK_ID: "top_panel_templ_edit",
+          },
+          {
+            TEXT: "Редактировать сайт",
+            TITLE: "Редактировать настройки сайта в панели управления",
+            ICON: "icon-edit",
+            ACTION: "jsUtils.Redirect([], '/bitrix/admin/site_edit.php?lang=ru&LID=s1')",
+            DEFAULT: false,
+            HK_ID: "top_panel_templ_site",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-arrow-active",
+        HOVER_CSS: "bx-panel-small-button-arrow-hover",
+        GROUP_ID: 4,
+        TEXT: "Шаблон сайта",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 100, "<b>Отладка</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/personal/order/?show_sql_stat=Y');",
+        83,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Статистика SQL-запросов",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/personal/order/?show_include_exec_time=Y');",
+        82,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Статистика включаемых областей",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/personal/order/?show_page_exec_time=Y');",
+        81,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Время исполнения страницы",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_2",
+        TYPE: "SMALL",
+        ACTIVE_CSS: "bx-panel-small-button-text-active",
+        HOVER_CSS: "bx-panel-small-button-text-hover",
+        HINT: {
+          TITLE: "Отладка",
+          TEXT: "Включение режима отображения суммарной статистики. Нажмите на стрелку, чтобы Просмотреть статистику запросов базы данных, статистику включаемых областей, время исполнение страницы и статистику компрессии.",
+          TARGET: "parent",
+        },
+        GROUP_ID: 4,
+        SKIP: true,
+        LINK: "/personal/order/?show_page_exec_time=Y&show_include_exec_time=Y&show_sql_stat=Y",
+        ACTION: "",
+        TEXT: "Отладка",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_2_menu",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: "Суммарная статистика",
+            TITLE: "Показывать статистику SQL-запросов, включаемых областей, времени исполнения",
+            CHECKED: false,
+            ACTION:
+              "jsUtils.Redirect([], '/personal/order/?show_page_exec_time=Y&show_include_exec_time=Y&show_sql_stat=Y');",
+            DEFAULT: true,
+            HK_ID: "top_panel_debug_summ",
+          },
+          { SEPARATOR: true },
+          {
+            TEXT: "Статистика SQL-запросов",
+            TITLE: "Показывать статистику SQL-запросов, исполняющихся на странице",
+            CHECKED: false,
+            ACTION: "jsUtils.Redirect([], '/personal/order/?show_sql_stat=Y');",
+            HK_ID: "top_panel_debug_sql",
+          },
+          {
+            TEXT: "Детальная статистика кеша",
+            TITLE: "Внимание! Может сильно влиять на время исполнения страницы.",
+            CHECKED: false,
+            ACTION: "jsUtils.Redirect([], '/personal/order/?show_cache_stat=Y');",
+            HK_ID: "top_panel_debug_cache",
+          },
+          {
+            TEXT: "Статистика включаемых областей",
+            TITLE: "Показывать статистику включаемых областей (время, запросы)",
+            CHECKED: false,
+            ACTION: "jsUtils.Redirect([], '/personal/order/?show_include_exec_time=Y');",
+            HK_ID: "top_panel_debug_incl",
+          },
+          {
+            TEXT: "Время исполнения страницы",
+            TITLE: "Показывать время исполнения страницы",
+            CHECKED: false,
+            ACTION: "jsUtils.Redirect([], '/personal/order/?show_page_exec_time=Y');",
+            HK_ID: "top_panel_debug_time",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-arrow-active",
+        HOVER_CSS: "bx-panel-small-button-arrow-hover",
+        GROUP_ID: 4,
+        TEXT: "Отладка",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_3",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: "График посещаемости страницы",
+            TITLE: "График посещаемости страницы",
+            IMAGE: "/bitrix/images/statistic/page_traffic.gif",
+            ACTION:
+              "javascript:window.open('/bitrix/admin/section_graph_list.php?lang=ru&public=Y&width=650&height=650&section=https%3A%2F%2Fdemo.daichi.business%3A443%2Fpersonal%2Forder%2F&set_default=Y','','target=_blank,scrollbars=yes,resizable=yes,width=650,height=650,left='+Math.floor((screen.width - 650)/2)+',top='+Math.floor((screen.height- 650)/2))",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-active",
+        HOVER_CSS: "bx-panel-small-button-hover",
+        HINT: {
+          TITLE: "Статистика",
+          TEXT: "Просмотр графика посещаемости страницы или статистики переходов.",
+          TARGET: "parent",
+        },
+        GROUP_ID: 5,
+        TEXT: "Статистика",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 101, "<b>Короткий URL</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "javascript:(new BX.CAdminDialog({'content_url':'/bitrix/admin/short_uri_edit.php?lang=ru&public=Y&bxpublic=Y&str_URI=%2Fpersonal%2Forder%2F&site=s1&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'770','height':'270'})).Show()",
+        85,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Добавить короткую ссылку",
+        0
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "jsUtils.Redirect([], '/bitrix/admin/short_uri_admin.php?lang=ru');",
+        86,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Список ссылок",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_4",
+        TYPE: "SMALL",
+        ACTIVE_CSS: "bx-panel-small-button-text-active",
+        HOVER_CSS: "bx-panel-small-button-text-hover",
+        HINT: { TITLE: "Короткая ссылка", TEXT: "Настройка короткой ссылки для текущей страницы", TARGET: "parent" },
+        GROUP_ID: 5,
+        SKIP: true,
+        LINK: "javascript:void(0)",
+        ACTION:
+          "(new BX.CAdminDialog({'content_url':'/bitrix/admin/short_uri_edit.php?lang=ru&public=Y&bxpublic=Y&str_URI=%2Fpersonal%2Forder%2F&site=s1&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'770','height':'270'})).Show()",
+        TEXT: "Короткий URL",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_4_menu",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: "Добавить короткую ссылку",
+            TITLE: "Добавить короткую ссылку на текущую страницу",
+            ACTION:
+              "javascript:(new BX.CAdminDialog({'content_url':'/bitrix/admin/short_uri_edit.php?lang=ru&public=Y&bxpublic=Y&str_URI=%2Fpersonal%2Forder%2F&site=s1&back_url=%2Fpersonal%2Forder%2F&siteTemplateId=general','width':'770','height':'270'})).Show()",
+            DEFAULT: true,
+            HK_ID: "MTP_SHORT_URI1",
+          },
+          {
+            TEXT: "Список ссылок",
+            TITLE: "Список коротких ссылок",
+            ACTION: "jsUtils.Redirect([], '/bitrix/admin/short_uri_admin.php?lang=ru');",
+            HK_ID: "MTP_SHORT_URI_LIST",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-arrow-active",
+        HOVER_CSS: "bx-panel-small-button-arrow-hover",
+        GROUP_ID: 5,
+        TEXT: "Короткий URL",
+      });</script><script type="text/javascript">BXHotKeys.Add("", "", 102, "<b>Стикеры</b>", 0);</script><script type="text/javascript">BXHotKeys.Add(
+        "Ctrl+Shift+83",
+        "if (window.oBXSticker){window.oBXSticker.AddSticker();}",
+        87,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Наклеить стикер",
+        154
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "Ctrl+Shift+88",
+        "if (window.oBXSticker){window.oBXSticker.ShowAll();}",
+        88,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Показать стикеры (0)",
+        155
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "Ctrl+Shift+76",
+        "if (window.oBXSticker){window.oBXSticker.ShowList('current');}",
+        89,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Список стикеров страницы",
+        156
+      );</script><script type="text/javascript">BXHotKeys.Add(
+        "",
+        "if (window.oBXSticker){window.oBXSticker.ShowList('all');}",
+        90,
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Список всех стикеров",
+        0
+      );</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_5",
+        TYPE: "SMALL",
+        ACTIVE_CSS: "bx-panel-small-button-text-active",
+        HOVER_CSS: "bx-panel-small-button-text-hover",
+        HINT: { TITLE: "Стикеры", TEXT: "Наклеить новый стикер на страницу.", TARGET: "parent" },
+        GROUP_ID: 5,
+        SKIP: true,
+        LINK: "javascript:void(0)",
+        ACTION: "if (window.oBXSticker){window.oBXSticker.AddSticker();}",
+        TEXT: "Стикеры",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_5_menu",
+        TYPE: "SMALL",
+        MENU: [
+          {
+            TEXT: "Наклеить стикер",
+            TITLE: "Наклеить новый стикер на страницу ( Ctrl+Shift+S ) ",
+            ICON: "",
+            ACTION: "if (window.oBXSticker){window.oBXSticker.AddSticker();}",
+            DEFAULT: true,
+            HK_ID: "FMST_PANEL_STICKER_ADD",
+          },
+          { SEPARATOR: true },
+          {
+            ID: "bxst-show-sticker-icon",
+            TEXT: "Показать стикеры (0)",
+            TITLE: "Отобразить все стикеры на странице ( Ctrl+Shift+X ) ",
+            ICON: "",
+            ACTION: "if (window.oBXSticker){window.oBXSticker.ShowAll();}",
+            HK_ID: "FMST_PANEL_STICKERS_SHOW",
+          },
+          {
+            TEXT: "Список стикеров страницы",
+            TITLE: "Показать список всех стикеров на текущей странице ( Ctrl+Shift+L ) ",
+            ICON: "",
+            ACTION: "if (window.oBXSticker){window.oBXSticker.ShowList('current');}",
+            HK_ID: "FMST_PANEL_CUR_STICKER_LIST",
+          },
+          {
+            TEXT: "Список всех стикеров",
+            TITLE: "Показать список всех стикеров на сайте",
+            ICON: "",
+            ACTION: "if (window.oBXSticker){window.oBXSticker.ShowList('all');}",
+            HK_ID: "FMST_PANEL_ALL_STICKER_LIST",
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-small-button-arrow-active",
+        HOVER_CSS: "bx-panel-small-button-arrow-hover",
+        GROUP_ID: 5,
+        TEXT: "Стикеры",
+      });</script><script type="text/javascript">BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_solutions_wizard",
+        TYPE: "BIG",
+        ACTIVE_CSS: "bx-panel-button-icon-active",
+        HOVER_CSS: "bx-panel-button-icon-hover",
+        HINT: { TITLE: "Протестировать новое решение", TEXT: "Выбор нового решения для установки." },
+        GROUP_ID: 6,
+        SKIP: true,
+      });
+      BX.admin.panel.RegisterButton({
+        ID: "bx_topmenu_btn_solutions_wizard_menu",
+        TYPE: "BIG",
+        MENU: [
+          {
+            ACTION: "jsUtils.Redirect([], '/?add_new_site_sol=sol&sessid=990042299c10c98b7dbb057a8ddd26ea')",
+            HTML: "<b>Протестировать новое решение<\/b>",
+            TITLE: "Создать новый сайт и запустить мастер установки нового решения",
+          },
+          {
+            ACTION:
+              "if(confirm('Внимание! После удаления кнопки вы сможете запустить мастер создания нового решения в панели управления, используя страницу с мастерами или формой добавления нового сайта. Удалить кнопку с панели?')) jsUtils.Redirect([], '/?delete_button_sol=sol&sessid=990042299c10c98b7dbb057a8ddd26ea');",
+            TEXT: "Удалить эту кнопку",
+            TITLE: "Удалить эту кнопку с панели",
+          },
+          { SEPARATOR: true },
+          {
+            TEXT: "Перейти на сайт",
+            MENU: [
+              {
+                ACTION: "jsUtils.Redirect([], '/');",
+                ICON: "checked",
+                TEXT: "Интернет-магазин (Сайт по умолчанию)",
+                TITLE: "Перейти на сайт Интернет-магазин (Сайт по умолчанию)",
+              },
+            ],
+          },
+        ],
+        ACTIVE_CSS: "bx-panel-button-text-active",
+        HOVER_CSS: "bx-panel-button-text-hover",
+        HINT: {
+          TITLE: "Протестировать новое решение",
+          TEXT: "Нажмите на эту кнопку, чтобы выбрать новое решение для установки, удаление этой кнопки с Панели управления или для перехода на другой сайт.",
+        },
+        GROUP_ID: 6,
+        TEXT: "Протестировать новое решение",
+      });</script><script type="text/javascript">BX.admin.panel.state = {
+        fixed: false,
+        collapsed: true,
+      };
+      BX.admin.moreButton.init({ buttonTitle: "Еще" });</script><script type="text/javascript">BXHotKeys.Add(
+        "Ctrl+Alt+75",
+        "location.href='/bitrix/admin/hot_keys_list.php?lang=ru';",
+        106,
+        "Перейти в раздел управления горячими клавишами",
+        150
+      );
+      BXHotKeys.Add("Ctrl+Alt+80", "BXHotKeys.ShowSettings();", 17, "Список горячих клавиш на странице", 146);
+      BXHotKeys.Add(
+        "Ctrl+Alt+85",
+        "location.href='/bitrix/admin/user_admin.php?lang='+phpVars.LANGUAGE_ID;",
+        139,
+        "Перейти в раздел управления пользователями",
+        145
+      );</script><script type="text/javascript">BXHotKeys.MesNotAssign = "не назначена";
+      BXHotKeys.MesClToChange = "Кликните мышкой, чтобы изменить";
+      BXHotKeys.MesClean = "Очистить";
+      BXHotKeys.MesBusy =
+        "Данная комбинация клавиш уже задействована. Вы уверены, что хотите её использовать повторно?";
+      BXHotKeys.MesClose = "Закрыть";
+      BXHotKeys.MesSave = "Сохранить";
+      BXHotKeys.MesSettings = "Настройка горячих клавиш";
+      BXHotKeys.MesDefault = "По умолчанию";
+      BXHotKeys.MesDelAll = "Удалить все";
+      BXHotKeys.MesDelConfirm = "Вы уверены, что хотите удалить все назначенные сочетания горячих клавиш?";
+      BXHotKeys.MesDefaultConfirm =
+        "Вы уверены, что хотите удалить все назначенные сочетания горячих клавиш и установить сочетания горячих клавиш по умолчанию?";
+      BXHotKeys.MesExport = "Экспорт";
+      BXHotKeys.MesImport = "Импорт";
+      BXHotKeys.MesExpFalse = "Экспортировать горячие клавиши не удалось.";
+      BXHotKeys.MesImpFalse = "Импортировать горячие клавиши не удалось.";
+      BXHotKeys.MesImpSuc = "Успешно импортировано горячих клавиш: ";
+      BXHotKeys.MesImpHeader = "Импорт горячих клавиш";
+      BXHotKeys.MesFileEmpty = "Для импорта горячих клавиш необходимо указать файл.";
+      BXHotKeys.MesDelete = "Удалить";
+      BXHotKeys.MesChooseFile = "Выбрать файл";
+      BXHotKeys.uid = 32;</script><script type="text/javascript">BX.ready(function () {
+        var BXST_MESS = {
+          Public: "общий",
+          Personal: "личный",
+          Close: "Отклеить",
+          Collapse: "Свернуть",
+          UnCollapse: "Восстановить",
+          UnCollapseTitle: "Двойной клик для восстановления стикера",
+          SetMarkerArea: "Привязать к области на странице",
+          SetMarkerEl: "Привязать к элементу на странице",
+          Color: "цвет",
+          Add: "добавить",
+          PersonalTitle: "Только вы можете видеть этот стикер. Нажмите, чтобы изменить.",
+          PublicTitle: "Этот стикер могут видеть другие. Нажмите, чтобы изменить.",
+          CursorHint: "Выделите область",
+          Yellow: "Желтый",
+          Green: "Зеленый",
+          Blue: "Синий",
+          Red: "Красный",
+          Purple: "Пурпурный",
+          Gray: "Серый",
+          StickerListTitle: "Список стикеров",
+          CompleteLabel: "выполнено",
+          DelConfirm: "Вы уверены, что хотите удалить выбранные стикеры?",
+          CloseConfirm: "Этот стикер наклеил #USER_NAME# Вы уверенны, что хотите его отклеить?",
+          Complete: "Пометить как завершенное",
+          CloseNotify: "Вы можете вернуть отклеенные стикеры на экран из #LINK#списка стикеров#LINK#.",
+        };
+        window.oBXSticker = new BXSticker(
+          {
+            access: "W",
+            sessid_get: "sessid=990042299c10c98b7dbb057a8ddd26ea",
+            start_width: "350",
+            start_height: "200",
+            min_width: "280",
+            min_height: "160",
+            start_color: "0",
+            zIndex: "5000",
+            curUserName: "Татьяна Маврина",
+            curUserId: "32",
+            pageUrl: "/personal/order/",
+            pageTitle: "Мои заказы",
+            bShowStickers: false,
+            listWidth: "800",
+            listHeight: "450",
+            listNaviSize: "5",
+            useHotkeys: false,
+            filterParams: { type: "all", colors: "all", status: "opened", page: "all" },
+            bHideBottom: true,
+            focusOnSticker: "0",
+            strDate: "2 ноября",
+            curPageCount: "0",
+            site_id: "s1",
+          },
+          [],
+          BXST_MESS
+        );
+      });</script><script type="text/javascript">function hideMpAnswer(el, module) {
+        if (el.parentNode.parentNode.parentNode) BX.hide(el.parentNode.parentNode.parentNode);
+        BX.ajax({
+          method: "POST",
+          dataType: "html",
+          url: "/bitrix/admin/partner_modules.php",
+          data: "module=" + module + "&sessid=990042299c10c98b7dbb057a8ddd26ea&act=unnotify",
+          async: true,
+          processData: false,
+        });
+      }</script><script type="text/javascript">function hideMpAnswer(el, module) {
+        if (el.parentNode.parentNode.parentNode) BX.hide(el.parentNode.parentNode.parentNode);
+        BX.ajax({
+          method: "POST",
+          dataType: "html",
+          url: "/bitrix/admin/partner_modules.php",
+          data: "module=" + module + "&sessid=990042299c10c98b7dbb057a8ddd26ea&act=unnotify",
+          async: true,
+          processData: false,
+        });
+      }</script><script type="text/javascript">function hideMpAnswer(el, module) {
+        if (el.parentNode.parentNode.parentNode) BX.hide(el.parentNode.parentNode.parentNode);
+        BX.ajax({
+          method: "POST",
+          dataType: "html",
+          url: "/bitrix/admin/partner_modules.php",
+          data: "module=" + module + "&sessid=990042299c10c98b7dbb057a8ddd26ea&act=unnotify",
+          async: true,
+          processData: false,
+        });
+      }</script><script type="text/javascript">BX.ready(function () {
+        BX.adminInformer.Init(7);
+      });</script><script>var bx_basketFKauiI = new BitrixSmallCart();
+      $(function () {
+        dApp.obSmallBasket.init(bx_basketFKauiI);
+      });</script><script type="text/javascript">bx_basketFKauiI.siteId = "s1";
+      bx_basketFKauiI.cartId = "bx_basketFKauiI";
+      bx_basketFKauiI.ajaxPath = "/bitrix/components/bitrix/sale.basket.basket.line/ajax.php";
+      bx_basketFKauiI.templateName = ".default";
+      bx_basketFKauiI.arParams = {
+        HIDE_ON_BASKET_PAGES: "N",
+        PATH_TO_BASKET: "/personal/cart/",
+        PATH_TO_ORDER: "/personal/order/make/",
+        PATH_TO_PERSONAL: "/personal/",
+        PATH_TO_PROFILE: "/personal/",
+        PATH_TO_REGISTER: "/login/",
+        POSITION_FIXED: "N",
+        POSITION_HORIZONTAL: "right",
+        POSITION_VERTICAL: "top",
+        SHOW_AUTHOR: "N",
+        SHOW_DELAY: "N",
+        SHOW_EMPTY_VALUES: "Y",
+        SHOW_IMAGE: "Y",
+        SHOW_NOTAVAIL: "Y",
+        SHOW_NUM_PRODUCTS: "Y",
+        SHOW_PERSONAL_LINK: "N",
+        SHOW_PRICE: "Y",
+        SHOW_PRODUCTS: "Y",
+        SHOW_SUMMARY: "Y",
+        SHOW_TOTAL_PRICE: "N",
+        COMPONENT_TEMPLATE: ".default",
+        PATH_TO_AUTHORIZE: "/login/",
+        SHOW_REGISTRATION: "N",
+        MAX_IMAGE_SIZE: "70",
+        CACHE_TYPE: "A",
+        AJAX: "N",
+        "~HIDE_ON_BASKET_PAGES": "N",
+        "~PATH_TO_BASKET": "/personal/cart/",
+        "~PATH_TO_ORDER": "/personal/order/make/",
+        "~PATH_TO_PERSONAL": "/personal/",
+        "~PATH_TO_PROFILE": "/personal/",
+        "~PATH_TO_REGISTER": "/login/",
+        "~POSITION_FIXED": "N",
+        "~POSITION_HORIZONTAL": "right",
+        "~POSITION_VERTICAL": "top",
+        "~SHOW_AUTHOR": "N",
+        "~SHOW_DELAY": "N",
+        "~SHOW_EMPTY_VALUES": "Y",
+        "~SHOW_IMAGE": "Y",
+        "~SHOW_NOTAVAIL": "Y",
+        "~SHOW_NUM_PRODUCTS": "Y",
+        "~SHOW_PERSONAL_LINK": "N",
+        "~SHOW_PRICE": "Y",
+        "~SHOW_PRODUCTS": "Y",
+        "~SHOW_SUMMARY": "Y",
+        "~SHOW_TOTAL_PRICE": "N",
+        "~COMPONENT_TEMPLATE": ".default",
+        "~PATH_TO_AUTHORIZE": "/login/",
+        "~SHOW_REGISTRATION": "N",
+        "~MAX_IMAGE_SIZE": "70",
+        "~CACHE_TYPE": "A",
+        "~AJAX": "N",
+        cartId: "bx_basketFKauiI",
+      }; // TODO \Bitrix\Main\Web\Json::encode
+      bx_basketFKauiI.closeMessage = "Скрыть";
+      bx_basketFKauiI.openMessage = "Раскрыть";
+      bx_basketFKauiI.activate();</script><script>var bx_basketT0kNhm = new BitrixSmallCart();
+      $(function () {
+        dApp.obSmallBasket.init(bx_basketT0kNhm);
+      });</script><script type="text/javascript">bx_basketT0kNhm.siteId = "s1";
+      bx_basketT0kNhm.cartId = "bx_basketT0kNhm";
+      bx_basketT0kNhm.ajaxPath = "/bitrix/components/bitrix/sale.basket.basket.line/ajax.php";
+      bx_basketT0kNhm.templateName = ".default";
+      bx_basketT0kNhm.arParams = {
+        HIDE_ON_BASKET_PAGES: "N",
+        PATH_TO_BASKET: "/personal/cart/",
+        PATH_TO_ORDER: "/personal/order/make/",
+        PATH_TO_PERSONAL: "/personal/",
+        PATH_TO_PROFILE: "/personal/",
+        PATH_TO_REGISTER: "/login/",
+        POSITION_FIXED: "N",
+        POSITION_HORIZONTAL: "right",
+        POSITION_VERTICAL: "top",
+        SHOW_AUTHOR: "N",
+        SHOW_DELAY: "N",
+        SHOW_EMPTY_VALUES: "Y",
+        SHOW_IMAGE: "Y",
+        SHOW_NOTAVAIL: "Y",
+        SHOW_NUM_PRODUCTS: "Y",
+        SHOW_PERSONAL_LINK: "N",
+        SHOW_PRICE: "Y",
+        SHOW_PRODUCTS: "Y",
+        SHOW_SUMMARY: "Y",
+        SHOW_TOTAL_PRICE: "N",
+        COMPONENT_TEMPLATE: ".default",
+        PATH_TO_AUTHORIZE: "/login/",
+        SHOW_REGISTRATION: "N",
+        MAX_IMAGE_SIZE: "70",
+        CACHE_TYPE: "A",
+        AJAX: "N",
+        "~HIDE_ON_BASKET_PAGES": "N",
+        "~PATH_TO_BASKET": "/personal/cart/",
+        "~PATH_TO_ORDER": "/personal/order/make/",
+        "~PATH_TO_PERSONAL": "/personal/",
+        "~PATH_TO_PROFILE": "/personal/",
+        "~PATH_TO_REGISTER": "/login/",
+        "~POSITION_FIXED": "N",
+        "~POSITION_HORIZONTAL": "right",
+        "~POSITION_VERTICAL": "top",
+        "~SHOW_AUTHOR": "N",
+        "~SHOW_DELAY": "N",
+        "~SHOW_EMPTY_VALUES": "Y",
+        "~SHOW_IMAGE": "Y",
+        "~SHOW_NOTAVAIL": "Y",
+        "~SHOW_NUM_PRODUCTS": "Y",
+        "~SHOW_PERSONAL_LINK": "N",
+        "~SHOW_PRICE": "Y",
+        "~SHOW_PRODUCTS": "Y",
+        "~SHOW_SUMMARY": "Y",
+        "~SHOW_TOTAL_PRICE": "N",
+        "~COMPONENT_TEMPLATE": ".default",
+        "~PATH_TO_AUTHORIZE": "/login/",
+        "~SHOW_REGISTRATION": "N",
+        "~MAX_IMAGE_SIZE": "70",
+        "~CACHE_TYPE": "A",
+        "~AJAX": "N",
+        cartId: "bx_basketT0kNhm",
+      }; // TODO \Bitrix\Main\Web\Json::encode
+      bx_basketT0kNhm.closeMessage = "Скрыть";
+      bx_basketT0kNhm.openMessage = "Раскрыть";
+      bx_basketT0kNhm.activate();</script><script>BX.message({
+        BASKET_STATE: {
+          defaults: {
+            RESTR_FOR_ONE_ITEM: "20",
+            RESTR_FOR_ONE_ITEM_MSG: "Максимальное количество одного товара для добавления в Корзину: 20 шт.",
+            RESTR_FOR_ALL: "30",
+            RESTR_FOR_ALL_MSG: "Превышено максимальное количество товаров для добавления в Корзину: 30 шт.",
+          },
+          items: [],
+        },
+      });</script><script>var skJSData = [];</script><script type="text/javascript">(function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(84485338, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer",
+      });</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-NB47G1DQQ1"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NB47G1DQQ1");</script></body></html>
