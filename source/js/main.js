@@ -61,10 +61,10 @@ $('.wrap-field-input--select-phone  select').on('select2:select', function (e) {
     </svg>
   `)
 
-  const sub = num === 9 ? '\\' + num : num;
+  const sub = num.toString().replace('9', '\\9');
 
   $input.inputmask(`+${sub} (999) 999-99-99`);
-  $placeholder.text(`+${num} (000) 000-00-00`)
+  $placeholder.text(`+${num} (000) 000-00-00`);
 })
 
 $('.wrap-field-input--select-phone select').on('select2:open', () => {
