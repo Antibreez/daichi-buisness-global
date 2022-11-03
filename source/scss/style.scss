@@ -13,6 +13,7 @@
   font-size: 15px;
   line-height: 1.5;
   color: #94a0b1;
+  pointer-events: none;
 }
 
 .select2-container.select2-container--select-phone {
@@ -67,8 +68,7 @@
 .field-input--select-phone {
   padding-left: 107px;
 
-  &:focus + .field-input--select-phone-placeholder,
-  &:hover + .field-input--select-phone-placeholder {
+  &:focus + .field-input--select-phone-placeholder {
     display: none;
   }
 }

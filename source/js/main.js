@@ -49,17 +49,21 @@ $(".wrap-field-input--select-phone select").each((idx, item) => {
 
     const num = +selected.text().split("+")[1].split(")")[0];
 
-    const sub = num.toString().replace("9", "\\9");
-
-    console.log(num, sub);
+    //const sub = num.toString().replace("9", "\\9");
 
     const $parent = $item.parents(".field-select2").first();
 
     const $input = $parent.find(".field-input--select-phone");
     const $placeholder = $parent.find(".field-input--select-phone-placeholder");
 
-    $input.inputmask(`+${sub} (999) 999-99-99`);
-    $placeholder.text(`+${num} (000) 000-00-00`);
+    const mask = selected.attr('data-mask');
+    const code = selected.attr('data-phone-code');
+    const maskCode = code.replace(/9/g, '\\9');
+
+    $input.inputmask(`${maskCode} ${mask}`, {
+      showMaskOnHover: false,
+    });
+    $placeholder.text(`${code} ${mask.replace(/9/g, '0')}`);
   });
 });
 
@@ -76,10 +80,14 @@ $(".wrap-field-input--select-phone  select").on("select2:select", function (e) {
     <img src="${e.params.data.element.getAttribute("data-img")}"/>
   `);
 
-  const sub = num.toString().replace("9", "\\9");
+  const mask = e.params.data.element.getAttribute("data-mask");
+  const code = e.params.data.element.getAttribute("data-phone-code");
+  const maskCode = code.replace(/9/g, '\\9');
 
-  $input.inputmask(`+${sub} (999) 999-99-99`);
-  $placeholder.text(`+${num} (000) 000-00-00`);
+  $input.inputmask(`${maskCode} ${mask}`, {
+    showMaskOnHover: false,
+  });
+  $placeholder.text(`${code} ${mask.replace(/9/g, '0')}`);
 });
 
 $(".wrap-field-input--select-phone select").on("select2:open", () => {
