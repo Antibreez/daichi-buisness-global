@@ -15,7 +15,8 @@ function formatState(state) {
 }
 
 
-const initSelect2Phone = () => {
+window.initSelect2Phone = () => {
+  console.log('initSelect2');
   $(".wrap-field-input--select-phone select").each((idx, item) => {
     const promise = new Promise((res) => {
       $(item).select2({
@@ -99,13 +100,13 @@ $(document).ajaxStart(function() {
 });
 
 $(document).ajaxSuccess(function() {
-  initSelect2Phone();
+  window.initSelect2Phone();
   console.log('success');
 });
 
 $(document).ajaxError(function() {
-  initSelect2Phone();
+  window.initSelect2Phone();
   console.log('fail');
 });
 
-initSelect2Phone();
+window.initSelect2Phone();
