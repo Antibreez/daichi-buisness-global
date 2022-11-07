@@ -30,9 +30,6 @@ module.exports = function scripts() {
         devtool: "source-map",
         plugins: [
           new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery",
             Swiper: "swiper",
           }), // jQuery (npm i jquery)
         ],

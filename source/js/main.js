@@ -16,7 +16,9 @@ function formatState(state) {
 
 
 window.initSelect2Phone = () => {
-  console.log('initSelect2');
+  $(".wrap-field-input--select-phone select").hasClass('select2-hidden-accessible')
+    && $(".wrap-field-input--select-phone select").select2('destroy');
+
   $(".wrap-field-input--select-phone select").each((idx, item) => {
     const promise = new Promise((res) => {
       $(item).select2({
