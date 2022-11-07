@@ -19,9 +19,9 @@ window.initSelect2Phone = () => {
   $(".wrap-field-input--select-phone select").hasClass('select2-hidden-accessible')
     && $(".wrap-field-input--select-phone select").select2('destroy');
 
-  console.log('Is select input', $(".wrap-field-input--select-phone select").length);
+    console.log('Is select input', $(".wrap-field-input--select-phone select").length);
 
-  $(".wrap-field-input--select-phone select").each((idx, item) => {
+    $(".wrap-field-input--select-phone select").each((idx, item) => {
     const promise = new Promise((res) => {
       $(item).select2({
         dropdownCssClass: "select2-container--select-phone-dropdown",
@@ -96,5 +96,21 @@ window.initSelect2Phone = () => {
     ? $(".field-input--select-phone").next().hide()
     : $(".field-input--select-phone").next().show();
 }
+
+$(document).ajaxStart(function() {
+  $(".wrap-field-input--select-phone  select").off();
+  $(".field-input--select-phone").off();
+  console.log('start');
+});
+
+$(document).ajaxSuccess(function() {
+  window.initSelect2Phone();
+  console.log('success');
+});
+
+$(document).ajaxError(function() {
+  window.initSelect2Phone();
+  console.log('fail');
+});
 
 window.initSelect2Phone();
